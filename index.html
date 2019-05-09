@@ -1,98 +1,123 @@
 <!doctype html>
-<html lang="en">
+    <html lang="en">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-
+        
+        <!-- Custom Additions -->
         <link href="css/Portfolio CSS.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto|Space+Mono" rel="stylesheet">
+        <link href="jquery.js" type="jQuery">
 
-        <title>Kiptoke Programming</title>
+        <title>Andrew Zhou</title>
     </head>
 
     <body>
 
         <!-- Header section and NavBar -->
 
-        <header>
-            <!-- <h1>Kiptoke Programming</h1> -->
-            <!-- Image and text -->
-            <nav class="navbar navbar-expand-lg navbar-fixed-top">
-                    <a class="navbar-brand" href="#">Kiptoke Programming</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarText">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Programs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Games</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                        </ul>
-                        <span class="navbar-text">
-                            <i>What could possibly go wrong?</i>
-                        </span>
-                    </div>
-                  </nav>
-        </header>
+
 
         <!-- Main Text -->
 
         <section>
-            <h1>Hello, world!</h1>
+            <div class="row">
+                <div class="col-3" style="margin: auto;filter: drop-shadow(0 0 5px #000000);">
+                    <img src="photos/fuji.jpg" style="width:100%">
+                </div> 
+                <div class="col-9">
+                    <h2>Hello! My name is</h2>
+                    <h1>Andrew Zhou</h1> 
+                    <h2>and I am a 
+                        <span id="changer">programmer.</span></h1>
 
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
-            <p>This is some filler text.</p>
+                        <script>    
+                            var words = ["gamer", "musician", "tall nerd", "University of Michigan student","Gubernatorial campaign manager","programmer"];
+                            var i = 0;
+                            var text = "programmer.";
+                            function _getChangedText() 
+                            {
+                                i = (i + 1) % words.length;
+                                return text.replace(/programmer/, words[i]);
+                            }
+                            function _changeText() 
+                            {
+                                var txt = _getChangedText();
+                                var d = document.getElementById("changer")
+                                d.className = "fade";
+                                setTimeout(function()
+                                {
+                                    d.className = "";
+                                    document.getElementById("changer").innerHTML = txt;
+                                }, 1000);
+                            }
+                            setInterval("_changeText()", 3000);
+                        </script>
+                    </h2>
+                    
+                </div>
+                        
+            </div>  
+            <hr>
+
+            <!-- Alternate Pages -->
+            <div class="row">
+                <div class="col">
+                    <h2>
+                        I make cool and interesting things. Here are they are:
+                    </h2>
+                </div>
+            </div>
+            <br>
+            <div class="row container">
+                <div class="col-4">
+                    <h4>
+                        <img src="photos/FallingThroughTime.png" class="photolink">
+                        <a href="games.html" class="centered">Games</a>
+                    </h4>
+                </div>
+                <div class="col-4">
+                    <h4>
+                        <img src="photos/Cryptocompanion.png" class="photolink">
+                        <a href="websites.html" class="centered">Websites</a>
+                    </h4>
+                </div>
+                <div class="col-4">
+                    <h4>
+                        <img src="photos/nearestNeighbor.png" class="photolink">
+                        <a href="programs.html" class="centered">Other Things</a>
+                    </h4>
+                </div>
+            </div>
+            <br>
+
+            <!-- Social Media -->
+
+            <footer>
+                <a href="mailto:andzhou@umich.edu?" style="text-decoration:none;">
+                    <img src="icons/email.png" alt="Email" class="icon">
+                </a>
+                <a href="https://www.facebook.com/kiptoke" style="text-decoration:none;">
+                    <img src="icons/facebook.png" alt="Facebook" class="icon">
+                </a>
+                <a href="https://github.com/Kiptoke" style="text-decoration:none;">
+                    <img src="icons/github.png" alt="Github" class="icon">
+                </a>
+                <a href="https://www.youtube.com/channel/UCTABjZeu0Hkbukw8WiJlwLA" style="text-decoration:none;">
+                    <img src="icons/youtube.png" alt="Youtube" class="icon">
+                </a>
+
+            </footer>
+
         </section>
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-        
-        
     </body>
 </html>
