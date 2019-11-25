@@ -75,6 +75,7 @@ font-family: 'Anaheim', sans-serif;
 @media (max-width: 575px) {
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
     color: #000000;
+    background-color: #3cb859;
   }
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
@@ -249,7 +250,7 @@ HERE LIES THE AMAZING EXAMPLES FROM W3SCHOOLS, THE BEST SOURCE OF CSS EXAMPLES
   left: 50%;
   transform: translate(-50%, -50%);
   color: #001F54;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 /**
