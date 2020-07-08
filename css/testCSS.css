@@ -1,0 +1,22 @@
+/*
+    General CSS Sheet for SPQR Application Website
+*/
+
+body{
+    background-color: #F8F8F8;
+}
+
+header{
+    background-color: #262860;
+    color: #F8F8F8;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 80px;
+}
+
+section{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
