@@ -18,6 +18,10 @@ section{
     padding-top: 1.5%;
 }
 
+a {
+    word-wrap: break-word;
+}
+
 a.styleless{
     color: black;
 }
