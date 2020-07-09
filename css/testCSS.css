@@ -3,12 +3,12 @@
 */
 
 body{
-    background-color: #F8F8F8;
+    background-color: #262860;
 }
 
 header{
     background-color: #262860;
-    color: #F8F8F8;
+    color: #F5F1ED;
     padding: 3vh 4vw 3vh 4vw; /*top right bottom left*/
 }
 
@@ -19,8 +19,8 @@ section{
 }
 
 footer{
-    background-color: #6c75b7;
-    color: #F8F8F8;
+    background-color: #262860;
+    color: #F5F1ED;
     text-align: center;
     height: 5vh;
     line-height: 5vh;
@@ -31,18 +31,19 @@ a {
 }
 
 a.styleless{
-    color: black;
+    color: #0E1A19;
 }
 
 .block{
     margin-top: 1%;
     margin-bottom: 2%;
     padding: 2% 1%; /* top/bottom left/right */
-    background-color: #CFEBDF;
+    background-color: #A4DFDD;
     border-radius: 20px;
     border-style: solid;
-    border-color: #12664F;
+    border-color: #0A8754;
     border-width: 2px;
+    color: #0E1A19;
 }
 
 .block-photo{
