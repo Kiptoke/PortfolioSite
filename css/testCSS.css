@@ -32,7 +32,7 @@ a {
 
 a.styleless{
     color: #0E1A19;
-}
+} 
 
 .block{
     margin-top: 1%;
@@ -125,6 +125,10 @@ a.styleless{
 }
 
 @media (max-width: 992px) {
+    .title{
+        padding: 1vh 0;
+    }
+
     .block-photo{
         display: block;
         margin: 0 auto;
