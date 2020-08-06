@@ -168,13 +168,6 @@ h3{
   font-family: 'Roboto', sans-serif;
   font-size: 2vw;
 }
-/**
-h4{
-  font-family: 'Anaheim', sans-serif;
-  font-weight: bold;
-  font-size: 3vw;
-  text-align: center;
-}**/
 
 section {
   background-color: #9EE3AC;
@@ -238,10 +231,8 @@ HERE LIES THE AMAZING EXAMPLES FROM W3SCHOOLS, THE BEST SOURCE OF CSS EXAMPLES
   color: white;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Anaheim', sans-serif;
-  font-weight: bold;
-  font-size: 3vw;
   text-align: center;
+  padding-bottom: 2vh;
 }
 
 .centered {
@@ -250,6 +241,7 @@ HERE LIES THE AMAZING EXAMPLES FROM W3SCHOOLS, THE BEST SOURCE OF CSS EXAMPLES
   left: 50%;
   transform: translate(-50%, -50%);
   color: #001F54;
+  font-family: 'Anaheim', sans-serif;
   font-size: 4vw;
 }
 
