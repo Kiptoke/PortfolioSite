@@ -33,6 +33,20 @@ body{
   overflow-x: hidden;
 }
 
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px)
+{
+  footer{
+    position: relative;
+  }
+}
+
 /* ---------- Front Page CSS ---------- */
 
 #intro{
@@ -99,6 +113,9 @@ body{
   border: 1px solid rgba(255,255,255,0.2);
 
   padding: 0 5px;
+
+  font-family: 'Anaheim', sans-serif;
+  font-size: max(25px, 2vw); /* Adjust so it resizes well */
 }
 
 .index-card img{
@@ -108,4 +125,11 @@ body{
   min-height: 150px;
 
   margin: 3vh auto;
+}
+
+.icon{
+  height: 25px;
+  width: auto;
+  margin: 10px;
+  border: 0;
 }
