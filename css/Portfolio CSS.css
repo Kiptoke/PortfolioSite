@@ -116,6 +116,8 @@ footer{
 
   font-family: 'Anaheim', sans-serif;
   font-size: max(25px, 2vw); /* Adjust so it resizes well */
+
+  transition: all .2s ease-in;
 }
 
 .index-card img{
@@ -125,6 +127,10 @@ footer{
   min-height: 150px;
 
   margin: 3vh auto;
+}
+
+.index-card:hover{
+  transform: scale(1.2);
 }
 
 .icon{
