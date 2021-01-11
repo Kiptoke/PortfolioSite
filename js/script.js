@@ -16,7 +16,7 @@ const IAmA = {
         cycleEntry(){
             setTimeout(function()
             {
-
+                
             }, 1000);
         }
     }
