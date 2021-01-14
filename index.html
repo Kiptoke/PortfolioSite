@@ -13,7 +13,6 @@
         <link href="css/Portfolio CSS.css" rel="stylesheet" type="text/css">
 
         <!-- JS Libraries + Files -->
-        <script type="text/javascript" src="js/script.js"></script>
         <script src="https://unpkg.com/vue@next"></script>
 
         <title>Andrew Zhou</title>
@@ -25,7 +24,7 @@
             <div id='intro-text'>
                 <p>Hello, my name is</p>
                 <p id='intro-name'><b>Andrew Zhou</b></p>
-                <p id="i-am-a">and I am a {{entry.text}}</p>
+                <p>and I am a <span id="i-am-a">{{ entry }}</span></p>
             </div>
         </div>
         <div id="test">
@@ -90,5 +89,8 @@
             </a>
 
         </footer>
+
+        <script type="text/javascript" src="js/script.js"></script>
+
     </body>
 </html>
