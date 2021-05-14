@@ -1,0 +1,218 @@
+{
+    "games": 
+    [
+        {
+            "name": "Somnium Eleven",
+            "date": "TBD",
+            "role": "Developer",
+            "img": "fried.png",
+            "tags": 
+            [
+                "Full Game",
+                "In Progress"
+            ] ,
+            "desc": "test description",
+            "tech": 
+            [
+                "Unity",
+                "Figma",
+                "Jira"
+            ],
+            "git": null,
+            "url": "https://nochistudios.com/somnium-eleven"
+        },
+        {
+            "name": "Soupremacy",
+            "date": "May 2021",
+            "role": "Designer",
+            "img": "fried.png",
+            "tags": 
+            [
+                "Game Jam",
+                "Finished"
+            ] ,
+            "desc": "test description",
+            "tech": 
+            [
+                "Unity"
+            ],
+            "git": null,
+            "url": "https://kapitha.itch.io/soupremacy"
+        },
+        {
+            "name": "Patently Awful Soccer Simulator",
+            "date": "March 2021",
+            "role": "Solo Developer",
+            "img": "fried.png",
+            "tags": 
+            [
+                "Game Jam",
+                "In Progress"
+            ] ,
+            "desc": "test description",
+            "tech": 
+            [
+                "Godot",
+                "Asesprite",
+                "Deflemask"
+            ],
+            "git": "https://github.com/Kiptoke/PatentlyAwfulSoccer",
+            "url": "https://kiptoke.itch.io/pass-soccer"
+        },
+        {
+            "name": "Troubled Waters",
+            "date": "November 2020",
+            "role": "Lead Designer, Lead Artist, Lead Musician",
+            "img": "fried.png",
+            "tags": 
+            [
+                "Full Game",
+                "Finished"
+            ] ,
+            "desc": "test description",
+            "tech": 
+            [
+                "Unity",
+                "Adobe Illustrator",
+                "Adobe Photoshop",
+                "Deflemask",
+                "Audacity",
+                "Jira"
+            ],
+            "git": null,
+            "url": "https://kiptoke.itch.io/troubled-waters"
+        },
+        {
+            "name": "Desolation Place",
+            "date": "August 2020",
+            "role": "Level Design Lead",
+            "img": "fried.png",
+            "tags": 
+            [
+                "Full Game",
+                "Finished"
+            ] ,
+            "desc": "test description",
+            "tech": 
+            [
+                "Unity",
+                "Jira"
+            ],
+            "git": null,
+            "url": "https://wolverinesoft-studio.itch.io/desolation-place"
+        },
+        {
+            "name": "Danger Duck",
+            "date": "August 2020",
+            "role": "Solo Developer",
+            "img": "fried.png",
+            "tags": 
+            [
+                "Game Jam",
+                "In Progress"
+            ] ,
+            "desc": "test description",
+            "tech": 
+            [
+                "Godot",
+                "Inkscape"
+            ],
+            "git": "https://github.com/Kiptoke/DangerDuck",
+            "url": "https://kiptoke.itch.io/danger-duck"
+        },
+        {
+            "name": "Io",
+            "date": "April 2020",
+            "role": "UI Designer",
+            "img": "fried.png",
+            "tags": 
+            [
+                "Full Game",
+                "Finished"
+            ] ,
+            "desc": "test description",
+            "tech": 
+            [
+                "Godot",
+                "Inkscape"
+            ],
+            "git": null,
+            "url": "https://wolverinesoft-studio.itch.io/io"
+        },
+        {
+            "name": "PyPIR Bot",
+            "date": "January 2020",
+            "role": "Solo Developer",
+            "img": "fried.png",
+            "tags": 
+            [
+                "Technical Demo",
+                "Finished"
+            ] ,
+            "desc": "test description",
+            "tech": 
+            [
+                "Python 3",
+                "Discord",
+                "BeautifulSoup4"
+            ],
+            "git": "https://github.com/Kiptoke/PyPIR-Bot",
+            "url": null
+        },
+        {
+            "name": "Starship Slime",
+            "date": "November 2019",
+            "role": "Solo Developer",
+            "img": "fried.png",
+            "tags": 
+            [
+                "Game Jam",
+                "Finished"
+            ] ,
+            "desc": "test description",
+            "tech": 
+            [
+                "Pico-8"
+            ],
+            "git": null,
+            "url": "https://kiptoke.itch.io/starship-slime"
+        },
+        {
+            "name": "The Powerpoint Experience",
+            "date": "March 2019",
+            "role": "Solo Developer",
+            "img": "fried.png",
+            "tags": 
+            [
+                "Game Jam",
+                "Finished"
+            ] ,
+            "desc": "test description",
+            "tech": 
+            [
+                "Microsoft PowerPoint"
+            ],
+            "git": null,
+            "url": "https://kiptoke.itch.io/the-powerpoint-experience"
+        },
+        {
+            "name": "Falling Through Time",
+            "date": "October 2018",
+            "role": "Solo Developer",
+            "img": "fried.png",
+            "tags": 
+            [
+                "Game Jam",
+                "Finished"
+            ] ,
+            "desc": "test description",
+            "tech": 
+            [
+                "Construct 2",
+                "Inkscape"
+            ],
+            "git": null,
+            "url": "https://kiptoke.itch.io/falling-through-time"
+        }
+    ]
+}
