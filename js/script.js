@@ -1,24 +1,4 @@
-/*
-new Vue ({
-    el: '#i-am-a',
-    data: {
-        entry: 'programmer',
-        entryList:[
-            'programmer', 
-            'web developer', 
-            'tall nerd', 
-            'game designer',
-            'University of Michigan student',
-            'musician' ,
-            'former Gubernatorial campaign manager'
-        ]
-    },
-    methods:{
-    }
-})
-*/
-
-Vue.createApp({
+const iama = Vue.createApp({
     data() {
         return {
             entry: 'programmer.',
@@ -48,4 +28,32 @@ Vue.createApp({
             }, 500)
         }, 4000)
     }
-}).mount('#i-am-a')
+})
+
+iama.mount('#i-am-a')
+
+const social = Vue.createApp({})
+social.component('social-media', {
+    template: `
+    <footer>
+        <a href='mailto:kiptoke@gmail.com?' style='text-decoration:none;' target='_blank'>
+            <img src='graphics/icons/email.svg' alt='Email' class='icon'>
+        </a>
+        <a href='https://www.facebook.com/kiptoke' style='text-decoration:none;' target='_blank'>
+            <img src='graphics/icons/facebook.svg' alt='Facebook' class='icon'>
+        </a>
+        <a href='https://twitter.com/KiptokeDev' style='text-decoration:none;' target='_blank'>
+            <img src='graphics/icons/twitter.svg' alt='Twitter' class='icon'>
+        </a>
+        <a href='https://github.com/Kiptoke' style='text-decoration:none;' target='_blank'>
+            <img src='graphics/icons/github.svg' alt='Github' class='icon'>
+        </a>
+        <a href='https://www.linkedin.com/in/kiptoke/' style='text-decoration:none;' target='_blank'>
+            <img src='graphics/icons/linkedin.svg' alt='LinkedIn' class='icon'>
+        </a>
+        <a href='https://www.youtube.com/channel/UCTABjZeu0Hkbukw8WiJlwLA' style='text-decoration:none;' target='_blank'>
+            <img src='graphics/icons/youtube.svg' alt='Youtube' class='icon'>
+        </a>
+    </footer>`
+})
+social.mount('#social')

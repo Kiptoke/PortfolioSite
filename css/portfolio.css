@@ -150,3 +150,48 @@ footer{
   margin: 10px;
   border: 0;
 }
+
+/* ---------- Content Page CSS ---------- */
+
+.content-page{
+  margin: 20px 5vw;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 0.2rem;
+}
+
+.link{
+  color:#2081C3;
+}
+
+.title{
+  font-family: 'Anaheim', sans-serif;
+  font-size: clamp(2vw, 8vw, 10vw);
+}
+
+/* Games Page */
+.game-photo{
+  width: max(150px, 10vw);
+  height: max(100px, 8vw);
+  margin: 3vh auto;
+}
+
+.display-box{
+  display: flex;
+  flex-direction: column;
+
+  background-size: cover;
+
+  padding: 1rem;
+
+  border-style: solid;0
+}
+
+.display-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
