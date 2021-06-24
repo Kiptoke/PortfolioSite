@@ -187,11 +187,9 @@ footer{
 
   padding: 1rem;
 
-  border-style: solid;0
+  border-style: solid;
 }
 
 .display-title{
   position: absolute;
-  top: 50%;
-  left: 50%;
 }
