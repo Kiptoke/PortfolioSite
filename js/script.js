@@ -8,9 +8,11 @@ const iama = Vue.createApp({
                 'web developer', 
                 'tall nerd', 
                 'CS student',
+                'UMich instructional aide',
                 'game designer',
-                'musician' ,
+                'musician',
                 'cybersecurity fan',
+                'D&D enthusiast',
                 'former campaign manager'
             ]
         }
@@ -29,7 +31,6 @@ const iama = Vue.createApp({
         }, 4000)
     }
 })
-
 iama.mount('#i-am-a')
 
 const social = Vue.createApp({})

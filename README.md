@@ -1,5 +1,24 @@
-# PortfolioSite
+# 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2728f368-5b5c-42a7-8cb0-423a85b1190b/deploy-status)](https://app.netlify.com/sites/kiptoke/deploys)
+## Project setup
+```
+npm install
+```
 
-The code for my personal portfolio site at https://www.kiptoke.com/.
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

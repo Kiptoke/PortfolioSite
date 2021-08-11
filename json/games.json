@@ -3,15 +3,16 @@
     [
         {
             "name": "Somnium Eleven",
-            "date": "TBD",
+            "id": "somnium-eleven",
+            "date": "Fall 2021",
             "role": "Developer",
-            "img": "fried.png",
+            "img": "somnium.png",
             "tags": 
             [
                 "Full Game",
                 "In Progress"
             ] ,
-            "desc": "test description",
+            "desc": "Somnium Eleven is a mobile isekai visual novel game by Nochi Studios, set to release in Fall 2021. Although it releases later this year, I worked on it as an intern from March-May 2021, building the in-game social media systems and assisting in user testing.",
             "tech": 
             [
                 "Unity",
@@ -23,9 +24,10 @@
         },
         {
             "name": "Soupremacy",
+            "id": "soupremacy",
             "date": "May 2021",
             "role": "Designer",
-            "img": "fried.png",
+            "img": "soupremacy.png",
             "tags": 
             [
                 "Game Jam",
@@ -41,9 +43,10 @@
         },
         {
             "name": "Patently Awful Soccer Simulator",
+            "id": "pass-soccer",
             "date": "March 2021",
             "role": "Solo Developer",
-            "img": "fried.png",
+            "img": "pass.png",
             "tags": 
             [
                 "Game Jam",
@@ -61,9 +64,10 @@
         },
         {
             "name": "Troubled Waters",
+            "id": "troubled-waters",
             "date": "November 2020",
             "role": "Lead Designer, Lead Artist, Lead Musician",
-            "img": "fried.png",
+            "img": "troubled.png",
             "tags": 
             [
                 "Full Game",
@@ -84,9 +88,10 @@
         },
         {
             "name": "Desolation Place",
+            "id": "desolation-place",
             "date": "August 2020",
             "role": "Level Design Lead",
-            "img": "fried.png",
+            "img": "desolation.png",
             "tags": 
             [
                 "Full Game",
@@ -103,13 +108,14 @@
         },
         {
             "name": "Danger Duck",
+            "id": "danger-duck",
             "date": "August 2020",
             "role": "Solo Developer",
-            "img": "fried.png",
+            "img": "duck.png",
             "tags": 
             [
                 "Game Jam",
-                "In Progress"
+                "Finished"
             ] ,
             "desc": "test description",
             "tech": 
@@ -121,10 +127,31 @@
             "url": "https://kiptoke.itch.io/danger-duck"
         },
         {
+            "name": "Ok, Zoomers",
+            "id": "zoomers",
+            "date": "June 2020",
+            "role": "Solo Developer",
+            "img": "zoomers.png",
+            "tags": 
+            [
+                "Game Jam",
+                "Finished"
+            ] ,
+            "desc": "test description",
+            "tech": 
+            [
+                "Godot",
+                "Inkscape"
+            ],
+            "git": "https://github.com/Kiptoke/Ok-Zoomers",
+            "url": "https://kiptoke.itch.io/ok-zoomers"
+        },
+        {
             "name": "Io",
+            "id": "io",
             "date": "April 2020",
             "role": "UI Designer",
-            "img": "fried.png",
+            "img": "io.jpg",
             "tags": 
             [
                 "Full Game",
@@ -141,9 +168,10 @@
         },
         {
             "name": "PyPIR Bot",
+            "id": "pypir",
             "date": "January 2020",
             "role": "Solo Developer",
-            "img": "fried.png",
+            "img": "pypir.png",
             "tags": 
             [
                 "Technical Demo",
@@ -161,9 +189,10 @@
         },
         {
             "name": "Starship Slime",
+            "id": "starship-slime",
             "date": "November 2019",
             "role": "Solo Developer",
-            "img": "fried.png",
+            "img": "starship.png",
             "tags": 
             [
                 "Game Jam",
@@ -179,9 +208,10 @@
         },
         {
             "name": "The Powerpoint Experience",
+            "id": "powerpoint",
             "date": "March 2019",
             "role": "Solo Developer",
-            "img": "fried.png",
+            "img": "powerpoint.png",
             "tags": 
             [
                 "Game Jam",
@@ -197,9 +227,10 @@
         },
         {
             "name": "Falling Through Time",
+            "id": "falling-through-time",
             "date": "October 2018",
             "role": "Solo Developer",
-            "img": "fried.png",
+            "img": "FallingThroughTime.png",
             "tags": 
             [
                 "Game Jam",
@@ -214,5 +245,9 @@
             "git": null,
             "url": "https://kiptoke.itch.io/falling-through-time"
         }
+    ],
+    "old-games":
+    [
+
     ]
 }

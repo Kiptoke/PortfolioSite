@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" class='blue-gradient-bg'>
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -12,86 +12,360 @@
         <!-- CSS Files -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link href="css/portfolio.css" rel="stylesheet" type="text/css">
+        <link href="css/colors.css" rel="stylesheet" type="text/css">
 
         <!-- JS Libraries + Files -->
         <script src="https://unpkg.com/vue@next"></script>
 
-        <title>Andrew Zhou</title>
+        <title>Andrew Zhou - Games</title>
     </head>
 
     <body>
         <div class="content-page">
-            <p class="title"><b>Games</b></p>
-            <p>Located here you will see all the games that I have made over the years, both from game jams and my own personal projects.</p>
+            <div class='white-text'>
+                <p class="title"><b>Games</b></p>
+                <p class='explain'>Located here you will see all the games that I have had a hand in making throughout the years, from game jams, to personal projects, to professional releases.</p>
+            </div>
+            
             
             <!-- Games -->
             <div class='grid'>
                 
-                <div class="display-box">
-                    <p><b>Somnium Eleven</b></p>
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#somnium-eleven">
+                        <img src='graphics/games/somnium.png' class='game-photo' alt='Somnium Eleven'></img>
+                        <div class='display-title'><b>Somnium Eleven</b></div>
+                    </div>
+                </a>
 
-                    <img src='graphics/fried.png' class='game-photo' alt='Somnium Eleven'>
+                <!-- Modal -->
+                <div class="modal fade" id="somnium-eleven" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="somnium-eleven-label">Somnium Eleven</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Somnium Eleven is a mobile isekai visual novel game by Nochi Studios, set to release in Fall 2021. Although it releases later this year, I worked on it as an intern from March-May 2021, building the in-game social media systems and assisting in user testing.
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
+  
                 
-                <div class="display-box">
-                    <p><b>Soupremacy</b></p>
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#soupremacy">
+                        <img src='graphics/games/soupremacy.png' class='game-photo' alt='Soupremacy'></img>
+                        <div class='display-title'><b>Soupremacy</b></div>
+                    </div>
+                </a>
 
-                    <img src='graphics/fried.png' class='game-photo' alt='Soupremacy'>
+                <!-- Modal -->
+                <div class="modal fade" id="soupremacy" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="soupremacy-label">Soupremacy</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            test description
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
+  
                 
-                <div class="display-box">
-                    <p><b>Patently Awful Soccer Simulator</b></p>
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#pass-soccer">
+                        <img src='graphics/games/pass.png' class='game-photo' alt='Patently Awful Soccer Simulator'></img>
+                        <div class='display-title'><b>Patently Awful Soccer Simulator</b></div>
+                    </div>
+                </a>
 
-                    <img src='graphics/fried.png' class='game-photo' alt='Patently Awful Soccer Simulator'>
+                <!-- Modal -->
+                <div class="modal fade" id="pass-soccer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="pass-soccer-label">Patently Awful Soccer Simulator</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            test description
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
+  
                 
-                <div class="display-box">
-                    <p><b>Troubled Waters</b></p>
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#troubled-waters">
+                        <img src='graphics/games/troubled.png' class='game-photo' alt='Troubled Waters'></img>
+                        <div class='display-title'><b>Troubled Waters</b></div>
+                    </div>
+                </a>
 
-                    <img src='graphics/fried.png' class='game-photo' alt='Troubled Waters'>
+                <!-- Modal -->
+                <div class="modal fade" id="troubled-waters" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="troubled-waters-label">Troubled Waters</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            test description
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
+  
                 
-                <div class="display-box">
-                    <p><b>Desolation Place</b></p>
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#desolation-place">
+                        <img src='graphics/games/desolation.png' class='game-photo' alt='Desolation Place'></img>
+                        <div class='display-title'><b>Desolation Place</b></div>
+                    </div>
+                </a>
 
-                    <img src='graphics/fried.png' class='game-photo' alt='Desolation Place'>
+                <!-- Modal -->
+                <div class="modal fade" id="desolation-place" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="desolation-place-label">Desolation Place</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            test description
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
+  
                 
-                <div class="display-box">
-                    <p><b>Danger Duck</b></p>
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#danger-duck">
+                        <img src='graphics/games/duck.png' class='game-photo' alt='Danger Duck'></img>
+                        <div class='display-title'><b>Danger Duck</b></div>
+                    </div>
+                </a>
 
-                    <img src='graphics/fried.png' class='game-photo' alt='Danger Duck'>
+                <!-- Modal -->
+                <div class="modal fade" id="danger-duck" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="danger-duck-label">Danger Duck</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            test description
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
+  
                 
-                <div class="display-box">
-                    <p><b>Io</b></p>
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#zoomers">
+                        <img src='graphics/games/zoomers.png' class='game-photo' alt='Ok, Zoomers'></img>
+                        <div class='display-title'><b>Ok, Zoomers</b></div>
+                    </div>
+                </a>
 
-                    <img src='graphics/fried.png' class='game-photo' alt='Io'>
+                <!-- Modal -->
+                <div class="modal fade" id="zoomers" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="zoomers-label">Ok, Zoomers</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            test description
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
+  
                 
-                <div class="display-box">
-                    <p><b>PyPIR Bot</b></p>
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#io">
+                        <img src='graphics/games/io.jpg' class='game-photo' alt='Io'></img>
+                        <div class='display-title'><b>Io</b></div>
+                    </div>
+                </a>
 
-                    <img src='graphics/fried.png' class='game-photo' alt='PyPIR Bot'>
+                <!-- Modal -->
+                <div class="modal fade" id="io" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="io-label">Io</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            test description
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
+  
                 
-                <div class="display-box">
-                    <p><b>Starship Slime</b></p>
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#pypir">
+                        <img src='graphics/games/pypir.png' class='game-photo' alt='PyPIR Bot'></img>
+                        <div class='display-title'><b>PyPIR Bot</b></div>
+                    </div>
+                </a>
 
-                    <img src='graphics/fried.png' class='game-photo' alt='Starship Slime'>
+                <!-- Modal -->
+                <div class="modal fade" id="pypir" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="pypir-label">PyPIR Bot</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            test description
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
+  
                 
-                <div class="display-box">
-                    <p><b>The Powerpoint Experience</b></p>
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#starship-slime">
+                        <img src='graphics/games/starship.png' class='game-photo' alt='Starship Slime'></img>
+                        <div class='display-title'><b>Starship Slime</b></div>
+                    </div>
+                </a>
 
-                    <img src='graphics/fried.png' class='game-photo' alt='The Powerpoint Experience'>
+                <!-- Modal -->
+                <div class="modal fade" id="starship-slime" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="starship-slime-label">Starship Slime</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            test description
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
+  
                 
-                <div class="display-box">
-                    <p><b>Falling Through Time</b></p>
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#powerpoint">
+                        <img src='graphics/games/powerpoint.png' class='game-photo' alt='The Powerpoint Experience'></img>
+                        <div class='display-title'><b>The Powerpoint Experience</b></div>
+                    </div>
+                </a>
 
-                    <img src='graphics/fried.png' class='game-photo' alt='Falling Through Time'>
+                <!-- Modal -->
+                <div class="modal fade" id="powerpoint" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="powerpoint-label">The Powerpoint Experience</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            test description
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
+  
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#falling-through-time">
+                        <img src='graphics/games/FallingThroughTime.png' class='game-photo' alt='Falling Through Time'></img>
+                        <div class='display-title'><b>Falling Through Time</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="falling-through-time" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="falling-through-time-label">Falling Through Time</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            test description
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+  
                 
             </div>
         </div>
