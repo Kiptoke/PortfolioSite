@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en" class='blue-gradient-bg'>
+<html lang="en" class='bg-blue-gradient'>
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -44,15 +44,42 @@
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="{{game.id}}-label">{{game.name}}</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h5 class="modal-title" id="{{game.id}}-label">{{game.name}}</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            {{game.desc}}
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> {{game.date}}</li>
+                                    <li><b>My Role:</b> {{game.role}}</li>
+                                    <li>
+                                        <b>Tech Used:</b> 
+                                        {% for tech in game.tech %}
+                                            <span class="badge bg-secondary">{{tech}}</span>
+                                        {% endfor %}
+                                    </li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        {% for tag in game.tags %}
+                                            <span class="badge bg-primary">{{tag}}</span>
+                                        {% endfor %}
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>{{game.desc}}</p>
                         </div>
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
+                            {% if game.git %}
+                            <form action="{{game.git}}" target="_blank">
+                                <button type="submit" class="btn btn-secondary">GitHub</button>
+                            </form>
+                            {% endif %}
+                            {% if game.url %}
+                            <form action="{{game.url}}" target="_blank">
+                                <button type="submit" class="btn btn-primary">Play</button>
+                            </form>
+                            {% endif %}    
                         </div>
                     </div>
                     </div>

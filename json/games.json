@@ -38,7 +38,7 @@
             [
                 "Unity"
             ],
-            "git": null,
+            "git": "https://github.com/badaminatasha/PAINT-YAM",
             "url": "https://kapitha.itch.io/soupremacy"
         },
         {
@@ -160,8 +160,7 @@
             "desc": "test description",
             "tech": 
             [
-                "Godot",
-                "Inkscape"
+                "Unity"
             ],
             "git": null,
             "url": "https://wolverinesoft-studio.itch.io/io"
