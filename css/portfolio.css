@@ -123,6 +123,10 @@ footer{
 }
 
 /* ---------- Modal CSS ---------- */
+.navbar{
+  font-family: 'Anaheim', sans-serif;
+  font-size: 20px;
+}
 
 /* ---------- Content Page CSS ---------- */
 

@@ -1,219 +1,740 @@
 <!doctype html>
-    <html lang="en">
+
+<html lang="en" class='bg-blue-gradient'>
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        <!-- Required Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-        
-        <!-- Custom Additions -->
-        <link href="css/Portfolio CSS.css" rel="stylesheet" type="text/css">
-        <link href="jquery.js" type="jQuery">
+        <!-- CSS Files -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="css/portfolio.css" rel="stylesheet" type="text/css">
+        <link href="css/colors.css" rel="stylesheet" type="text/css">
 
-        <title>Andrew Zhou</title>
+        <!-- JS Libraries + Files -->
+        <script src="https://unpkg.com/vue@next"></script>
+
+        <title>Andrew Zhou - Games</title>
     </head>
 
     <body>
-
-        <!-- Header section and NavBar -->
-
-        <nav class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><img src="icons/hamburger.svg"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark-blue">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
                         <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="games.html">Games<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Games</a>
                         <a class="nav-link" href="websites.html">Websites</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="programs.html">Other</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pdf/Resume - Summer 2020.pdf" target="_blank">Resume</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-                <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
-                </form>
+                        <a class="nav-link" href="music.html">Music</a>
+                        <a class="nav-link" href="pdf/resume.pdf">Resume</a>
+                    </div>
+                </div>
             </div>
         </nav>
-
-        <!-- Main Text -->
-
-        <section>
+        
+        <div class="content-page">
+            <div class='white-text'>
+                <p class="title"><b>Games</b></p>
+                <p class='explain'>Located here you will see all the games that I have had a hand in making throughout the years, from game jams, to personal projects, to professional releases.</p>
+            </div>
             
-            <h1>Games</h1>
-            <h3>Located here you will see all the games that I have made over the years, both from game jams and my own personal projects.</h3>
-            <hr></hr>
-            <!-- EECS 494 -->
-            <div class="display-box">
-                <h2 style="color: #001F54; margin-bottom: 20px;"><b>EECS 494 - Computer Game Dev</b><small style="color: #001F54;"><i>September - December 2020</i></small></h2>
-
-                <div class="row">
-                    <div class="col-12"> 
-                        <p>These are the web builds for each of the projects I did in the University of Michigan's EECS 494 class, dedicated towards teaching computer game developing through Unity and the C# language.</p>
-                        <a href="eecs494.html" style="color:#2081C3">Link to the 494 Page</a>
-                    </div>
-                </div>
-            </div>
-            <hr></hr>
-            <!-- Ok, Zoomers -->
-            <div class="display-box">
-                <h2 style="color: #001F54; margin-bottom: 20px;"><b>Ok, Zoomers</b><small style="color: #001F54;"><i>June 2020</i></small></h2>
-
-                <div class="row">
-                    <div class="col-4">
-                        <img src="photos/zoomers.png" alt="Ok, Zoomers">
-                    </div>
-                    <div class="col-8"> 
-                        <p>A casual endless runner game, where you pilot a spaceship zooming through a crowded asteroid field.</p>
-                        <p>While the game jam was a week long, I was busy with managing and running the jam; As a result, <i>Ok, Zoomers</i> was made in only one day using the Godot Engine.</p>
-                        <p>Made for WolverineSoft's June Jam. The theme was "Zoom."</p>
-                        <a href="https://kiptoke.itch.io/ok-zoomers" style="color:#2081C3">Itch.io Link</a>
-                    </div>
-                </div>
-            </div>
-            <hr></hr>
-            <!-- Danger Duck -->
-            <div class="display-box">
-                <h2 style="color: #001F54; margin-bottom: 20px;"><b>Danger Duck</b><small style="color: #001F54;"><i>June 2020</i></small></h2>
-
-                <div class="row">
-                    <div class="col-4">
-                        <img src="photos/duck.png" alt="Danger Duck">
-                    </div>
-                    <div class="col-8"> 
-                        <p>A 2D top-down shooter built with the Godot Engine.</p>
-                        <p>The game jam encouraged developers to make games with "bad" art. I decided to crowdsource graphics from my close friends, and put them into the game. All of their graphics and attributations are available in the credits.</p>
-                        <p>Made for the "I Can't Draw But Want to Make a Game (Again)" game jam on Itch.io.</p>
-                        <a href="https://kiptoke.itch.io/danger-duck" style="color:#2081C3">Itch.io Link</a>
-                    </div>
-                </div>
-            </div>
-            <hr></hr>
-            <!-- Io -->
-            <div class="display-box">
-                <h2 style="color: #001F54;"><b>Io</b><small style="color: #001F54;"><i>April 2020 - UI Designer</i></small></h2>
-
-                <div class="row">
-                    <div class="col-4">
-                        <img src="photos/io.png" alt="Io">
-                    </div>
-                    <div class="col-8"> 
-                        <p>A 2D action platformer where a girl with teleportation powers descends into the abyss to uncover a mystery surrounding her village. Made as a part of a three-month project in Unity.</p>
-                        <p>I was a UI Designer working with WolverineSoft Studio, the University of Michigan's long-term game dev team.</p>
-                        <a href="https://wolverinesoft-studio.itch.io/io" style="color:#2081C3">Itch.io Link</a>
-                    </div>
-                </div>
-            </div>
-            <hr></hr>
-            <!-- Re-Pair -->
-            <div class="display-box">
-                <h2 style="color: #001F54; margin-bottom: 20px;"><b>Re-Pair</b><small style="color: #001F54;"><i>February 2020</i></small></h2>
-
-                <div class="row">
-                    <div class="col-4">
-                        <img src="photos/RePair.png" alt="Re-Pair">
-                    </div>
-                    <div class="col-8"> 
-                        <p>"<i>On a beautiful day, two blocks, RED and BLUE head out hiking on a canyon trail - they pass over a gorge on a small rope bridge, when it suddenly gives way with BLUE on it! BLUE finds themself deep down within in the canyon, and it sounds like a rogue river flood is coming up...</i>"</p>
-                        <p>This game was my first use of the Godot Engine, along with my first use of Pyxel Edit and MilkyTracker in a game-dev setting.</p>
-                        <p>Made for the 2020 Global Game Jam at the University of Michigan. The theme was "Repair."</p>
-                        <a href="https://kiptoke.itch.io/re-pair" style="color:#2081C3">Itch.io Link</a>
-                        <a href="https://globalgamejam.org/2020/games/re-pair-2-1" style="color:#2081C3">GGJ Link</a>
-                    </div>
-                </div>
-            </div>
-            <hr></hr>
-            <!-- Starship Slime -->
-            <div class="display-box">
-                <h2 style="color: #001F54; margin-bottom: 20px;"><b>Starship Slime</b><small style="color: #001F54;"><i>November 2019</i></small></h2>
-
-                <div class="row">
-                    <div class="col-4">
-                        <img src="photos/starship.png" alt="Starship Slime">
-                    </div>
-                    <div class="col-8"> 
-                        <p>A quick retro clean-em-up where you rid a spaceship of an infestation of space slimes. The game was my exploration into the capabilities of the Pico-8 game-dev platform.</p>
-                        <p>Made for WolverineSoft's 2019 Turkey Game Jam. The theme was "Start Small."</p>
-                        <a href="https://kiptoke.itch.io/starship-slime" style="color:#2081C3">Itch.io Link</a>
-                    </div>
-                </div>
-            </div>
-            <hr></hr>
-            <!-- The Powerpoint Experience -->
-            <div class="display-box">
-                <h2 style="color: #001F54; margin-bottom: 20px;"><b>The Powerpoint Experience</b><small style="color: #001F54;"><i>March 2019</i></small></h2>
-
-                <div class="row">
-                    <div class="col-4">
-                        <img src="photos/powerpoint.png" alt="Powerpoint Experience">
-                    </div>
-                    <div class="col-8"> 
-                        <p>A self-reflective experience on participating in a game jam... <i>late.</i> As the title states, it was made in Powerpoint and includes many inside jokes.</p>
-                        <p>Made for WolverineSoft's 2019 Shammy Game Jam. The theme was "Eclipse."</p>
-                        <a href="https://kiptoke.itch.io/the-powerpoint-experience" style="color:#2081C3">Itch.io Link</a>
-                    </div>
-                </div>
-            </div>
-            <hr></hr>
-            <!-- Falling Through Time -->
-            <div class="display-box">
-                <h2 style="color: #001F54; margin-bottom: 20px;"><b>Falling Through Time</b><small style="color: #001F54;"><i>October 2018</i></small></h2>
-
-                <div class="row">
-                    <div class="col-4">
-                        <img src="photos/FallingThroughTime.png" alt="Falling Through Time">
-                    </div>
-                    <div class="col-8"> 
-                        <p>A literal "tower defense" game where you drop falling projectiles on your enemies. Defend your tower through eras of time and prevent your kingdom from falling!</p>
-                        <p>Made for WolverineSoft's 2018 Pumpkin Game Jam. The theme was "Fall."</p>
-                        <a href="https://kiptoke.itch.io/falling-through-time" style="color:#2081C3">Itch.io Link</a>
-                    </div>
-                </div>
-            </div>
-            <hr></hr>
             
-            <hr></hr>
-            
-            <!-- Social Media -->
-
-            <footer>
-                <a href="mailto:andzhou@umich.edu?" style="text-decoration:none;">
-                    <img src="icons/email.png" alt="Email" class="icon">
-                </a>
-                <a href="https://www.facebook.com/kiptoke" style="text-decoration:none;">
-                    <img src="icons/facebook.png" alt="Facebook" class="icon">
-                </a>
-                <a href="https://twitter.com/KiptokeDev" style="text-decoration:none;">
-                    <img src="icons/twitter.png" alt="Twitter" class="icon">
-                </a>
-                <a href="https://github.com/Kiptoke" style="text-decoration:none;">
-                    <img src="icons/github.png" alt="Github" class="icon">
-                </a>
-                <a href="https://www.youtube.com/channel/UCTABjZeu0Hkbukw8WiJlwLA" style="text-decoration:none;">
-                    <img src="icons/youtube.png" alt="Youtube" class="icon">
+            <!-- Games -->
+            <div class='grid'>
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#somnium-eleven">
+                        <img src='graphics/games/somnium.png' class='game-photo' alt='Somnium Eleven'></img>
+                        <div class='display-title'><b>Somnium Eleven</b></div>
+                    </div>
                 </a>
 
-            </footer>
+                <!-- Modal -->
+                <div class="modal fade" id="somnium-eleven" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="somnium-eleven-label">Somnium Eleven</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> Fall 2021</li>
+                                    <li><b>My Role:</b> Developer</li>
+                                    <li>
+                                        <b>Tech Used:</b> 
+                                        
+                                            <span class="badge bg-secondary">Unity</span>
+                                        
+                                            <span class="badge bg-secondary">Figma</span>
+                                        
+                                            <span class="badge bg-secondary">Jira</span>
+                                        
+                                    </li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-primary">Full Game</span>
+                                        
+                                            <span class="badge bg-primary">In Progress</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>Somnium Eleven is a mobile isekai visual novel game by Nochi Studios, set to release in Fall 2021. Although it releases later this year, I worked on it as an intern from March - May 2021. As a programming intern, I helped to build the game&#39;s internal social media system, reworked parts of the in-game economy and store user interfaces, and also assisted in running user playtesting sessions. I also helped to develop tools for future developers, such as a script converter that converted Google Doc files from the writing team into usable JSON code for use in Unity.</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            
+                            <form action="https://nochistudios.com/somnium-eleven" target="_blank">
+                                <button type="submit" class="btn btn-primary">Play</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+  
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#soupremacy">
+                        <img src='graphics/games/soupremacy.png' class='game-photo' alt='Soupremacy'></img>
+                        <div class='display-title'><b>Soupremacy</b></div>
+                    </div>
+                </a>
 
-        </section>
+                <!-- Modal -->
+                <div class="modal fade" id="soupremacy" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="soupremacy-label">Soupremacy</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> May 2021</li>
+                                    <li><b>My Role:</b> Designer</li>
+                                    <li>
+                                        <b>Tech Used:</b> 
+                                        
+                                            <span class="badge bg-secondary">Unity</span>
+                                        
+                                    </li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-primary">Game Jam</span>
+                                        
+                                            <span class="badge bg-primary">Finished</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>Soupremacy is a side-scrolling shoot-em-up bullet hell made in a weekend for the 2021 Paint Jam with the theme &#34;Campbell&#39;s Soup&#34;. As the main designer for this game, I not only helped flesh out the central concept of the game - one in which you fight various soup bosses in order to reign &#39;soupreme&#39; - but also designed the bullet patterns and battle mechanics for the three boss fights.</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <form action="https://github.com/badaminatasha/PAINT-YAM" target="_blank">
+                                <button type="submit" class="btn btn-secondary">GitHub</button>
+                            </form>
+                            
+                            
+                            <form action="https://kapitha.itch.io/soupremacy" target="_blank">
+                                <button type="submit" class="btn btn-primary">Play</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+  
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#pass-soccer">
+                        <img src='graphics/games/pass.png' class='game-photo' alt='Patently Awful Soccer Simulator'></img>
+                        <div class='display-title'><b>Patently Awful Soccer Simulator</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="pass-soccer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="pass-soccer-label">Patently Awful Soccer Simulator</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> March 2021</li>
+                                    <li><b>My Role:</b> Solo Developer</li>
+                                    <li>
+                                        <b>Tech Used:</b> 
+                                        
+                                            <span class="badge bg-secondary">Godot</span>
+                                        
+                                            <span class="badge bg-secondary">Aseprite</span>
+                                        
+                                            <span class="badge bg-secondary">Deflemask</span>
+                                        
+                                    </li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-primary">Game Jam</span>
+                                        
+                                            <span class="badge bg-primary">In Progress</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>Patently Awful Soccer Simulator is a physics-based soccer simulation acrade game that I made in a weekend for WolverineSoft&#39;s 2021 Shammy Game Jam. The current version of the game has the player playing soccer with a gun against a rather simple AI, but I plan to expand it to have new control schemes, better AI, and potentially multiplayer functionality when I find the time for it.</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <form action="https://github.com/Kiptoke/PatentlyAwfulSoccer" target="_blank">
+                                <button type="submit" class="btn btn-secondary">GitHub</button>
+                            </form>
+                            
+                            
+                            <form action="https://kiptoke.itch.io/pass-soccer" target="_blank">
+                                <button type="submit" class="btn btn-primary">Play</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+  
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#troubled-waters">
+                        <img src='graphics/games/troubled.png' class='game-photo' alt='Troubled Waters'></img>
+                        <div class='display-title'><b>Troubled Waters</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="troubled-waters" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="troubled-waters-label">Troubled Waters</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> November 2020</li>
+                                    <li><b>My Role:</b> Lead Designer, Lead Artist, Lead Musician</li>
+                                    <li>
+                                        <b>Tech Used:</b> 
+                                        
+                                            <span class="badge bg-secondary">Unity</span>
+                                        
+                                            <span class="badge bg-secondary">Adobe Illustrator</span>
+                                        
+                                            <span class="badge bg-secondary">Adobe Photoshop</span>
+                                        
+                                            <span class="badge bg-secondary">Deflemask</span>
+                                        
+                                            <span class="badge bg-secondary">Audacity</span>
+                                        
+                                            <span class="badge bg-secondary">Jira</span>
+                                        
+                                    </li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-primary">Full Game</span>
+                                        
+                                            <span class="badge bg-primary">Finished</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>Troubled Waters is a top-down strategic-action game in which you control and manage a privateer trying to save the Tradewind Isles from a band of nasty pirates. I was part of a team of 4 other developers that created this game over 3 months as our final project for EECS 494, the game development course at the University of Michigan. I was the sole designer, artist, and musician for the entirety of the game&#39;s development. This means that I largely created all the music, sound effects, graphics, level designs, ship designs, UIs, and encounters for the entire game.</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            
+                            <form action="https://kiptoke.itch.io/troubled-waters" target="_blank">
+                                <button type="submit" class="btn btn-primary">Play</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+  
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#desolation-place">
+                        <img src='graphics/games/desolation.png' class='game-photo' alt='Desolation Place'></img>
+                        <div class='display-title'><b>Desolation Place</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="desolation-place" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="desolation-place-label">Desolation Place</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> August 2020</li>
+                                    <li><b>My Role:</b> Level Design Lead</li>
+                                    <li>
+                                        <b>Tech Used:</b> 
+                                        
+                                            <span class="badge bg-secondary">Unity</span>
+                                        
+                                            <span class="badge bg-secondary">Jira</span>
+                                        
+                                    </li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-primary">Full Game</span>
+                                        
+                                            <span class="badge bg-primary">Finished</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>test description</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            
+                            <form action="https://wolverinesoft-studio.itch.io/desolation-place" target="_blank">
+                                <button type="submit" class="btn btn-primary">Play</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+  
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#danger-duck">
+                        <img src='graphics/games/duck.png' class='game-photo' alt='Danger Duck'></img>
+                        <div class='display-title'><b>Danger Duck</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="danger-duck" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="danger-duck-label">Danger Duck</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> August 2020</li>
+                                    <li><b>My Role:</b> Solo Developer</li>
+                                    <li>
+                                        <b>Tech Used:</b> 
+                                        
+                                            <span class="badge bg-secondary">Godot</span>
+                                        
+                                            <span class="badge bg-secondary">Inkscape</span>
+                                        
+                                    </li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-primary">Game Jam</span>
+                                        
+                                            <span class="badge bg-primary">Finished</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>test description</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <form action="https://github.com/Kiptoke/DangerDuck" target="_blank">
+                                <button type="submit" class="btn btn-secondary">GitHub</button>
+                            </form>
+                            
+                            
+                            <form action="https://kiptoke.itch.io/danger-duck" target="_blank">
+                                <button type="submit" class="btn btn-primary">Play</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+  
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#zoomers">
+                        <img src='graphics/games/zoomers.png' class='game-photo' alt='Ok, Zoomers'></img>
+                        <div class='display-title'><b>Ok, Zoomers</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="zoomers" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="zoomers-label">Ok, Zoomers</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> June 2020</li>
+                                    <li><b>My Role:</b> Solo Developer</li>
+                                    <li>
+                                        <b>Tech Used:</b> 
+                                        
+                                            <span class="badge bg-secondary">Godot</span>
+                                        
+                                            <span class="badge bg-secondary">Inkscape</span>
+                                        
+                                    </li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-primary">Game Jam</span>
+                                        
+                                            <span class="badge bg-primary">Finished</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>test description</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <form action="https://github.com/Kiptoke/Ok-Zoomers" target="_blank">
+                                <button type="submit" class="btn btn-secondary">GitHub</button>
+                            </form>
+                            
+                            
+                            <form action="https://kiptoke.itch.io/ok-zoomers" target="_blank">
+                                <button type="submit" class="btn btn-primary">Play</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+  
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#io">
+                        <img src='graphics/games/io.jpg' class='game-photo' alt='Io'></img>
+                        <div class='display-title'><b>Io</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="io" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="io-label">Io</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> April 2020</li>
+                                    <li><b>My Role:</b> UI Designer</li>
+                                    <li>
+                                        <b>Tech Used:</b> 
+                                        
+                                            <span class="badge bg-secondary">Unity</span>
+                                        
+                                    </li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-primary">Full Game</span>
+                                        
+                                            <span class="badge bg-primary">Finished</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>test description</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            
+                            <form action="https://wolverinesoft-studio.itch.io/io" target="_blank">
+                                <button type="submit" class="btn btn-primary">Play</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+  
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#pypir">
+                        <img src='graphics/games/pypir.png' class='game-photo' alt='PyPIR Bot'></img>
+                        <div class='display-title'><b>PyPIR Bot</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="pypir" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="pypir-label">PyPIR Bot</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> January 2020</li>
+                                    <li><b>My Role:</b> Solo Developer</li>
+                                    <li>
+                                        <b>Tech Used:</b> 
+                                        
+                                            <span class="badge bg-secondary">Python 3</span>
+                                        
+                                            <span class="badge bg-secondary">Discord</span>
+                                        
+                                            <span class="badge bg-secondary">BeautifulSoup4</span>
+                                        
+                                    </li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-primary">Technical Demo</span>
+                                        
+                                            <span class="badge bg-primary">Finished</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>test description</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <form action="https://github.com/Kiptoke/PyPIR-Bot" target="_blank">
+                                <button type="submit" class="btn btn-secondary">GitHub</button>
+                            </form>
+                            
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+  
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#starship-slime">
+                        <img src='graphics/games/starship.png' class='game-photo' alt='Starship Slime'></img>
+                        <div class='display-title'><b>Starship Slime</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="starship-slime" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="starship-slime-label">Starship Slime</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> November 2019</li>
+                                    <li><b>My Role:</b> Solo Developer</li>
+                                    <li>
+                                        <b>Tech Used:</b> 
+                                        
+                                            <span class="badge bg-secondary">Pico-8</span>
+                                        
+                                    </li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-primary">Game Jam</span>
+                                        
+                                            <span class="badge bg-primary">Finished</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>test description</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            
+                            <form action="https://kiptoke.itch.io/starship-slime" target="_blank">
+                                <button type="submit" class="btn btn-primary">Play</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+  
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#powerpoint">
+                        <img src='graphics/games/powerpoint.png' class='game-photo' alt='The Powerpoint Experience'></img>
+                        <div class='display-title'><b>The Powerpoint Experience</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="powerpoint" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="powerpoint-label">The Powerpoint Experience</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> March 2019</li>
+                                    <li><b>My Role:</b> Solo Developer</li>
+                                    <li>
+                                        <b>Tech Used:</b> 
+                                        
+                                            <span class="badge bg-secondary">Microsoft PowerPoint</span>
+                                        
+                                    </li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-primary">Game Jam</span>
+                                        
+                                            <span class="badge bg-primary">Finished</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>test description</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            
+                            <form action="https://kiptoke.itch.io/the-powerpoint-experience" target="_blank">
+                                <button type="submit" class="btn btn-primary">Play</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+  
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#falling-through-time">
+                        <img src='graphics/games/FallingThroughTime.png' class='game-photo' alt='Falling Through Time'></img>
+                        <div class='display-title'><b>Falling Through Time</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="falling-through-time" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="falling-through-time-label">Falling Through Time</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> October 2018</li>
+                                    <li><b>My Role:</b> Solo Developer</li>
+                                    <li>
+                                        <b>Tech Used:</b> 
+                                        
+                                            <span class="badge bg-secondary">Construct 2</span>
+                                        
+                                            <span class="badge bg-secondary">Inkscape</span>
+                                        
+                                    </li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-primary">Game Jam</span>
+                                        
+                                            <span class="badge bg-primary">Finished</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>test description</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            
+                            <form action="https://kiptoke.itch.io/falling-through-time" target="_blank">
+                                <button type="submit" class="btn btn-primary">Play</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+  
+                
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/script.js"></script>
+
     </body>
 </html>

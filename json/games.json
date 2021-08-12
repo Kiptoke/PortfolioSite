@@ -12,7 +12,7 @@
                 "Full Game",
                 "In Progress"
             ] ,
-            "desc": "Somnium Eleven is a mobile isekai visual novel game by Nochi Studios, set to release in Fall 2021. Although it releases later this year, I worked on it as an intern from March-May 2021, building the in-game social media systems and assisting in user testing.",
+            "desc": "Somnium Eleven is a mobile isekai visual novel game by Nochi Studios, set to release in Fall 2021. Although it releases later this year, I worked on it as an intern from March - May 2021. As a programming intern, I helped to build the game's internal social media system, reworked parts of the in-game economy and store user interfaces, and also assisted in running user playtesting sessions. I also helped to develop tools for future developers, such as a script converter that converted Google Doc files from the writing team into usable JSON code for use in Unity.",
             "tech": 
             [
                 "Unity",
@@ -33,7 +33,7 @@
                 "Game Jam",
                 "Finished"
             ] ,
-            "desc": "test description",
+            "desc": "Soupremacy is a side-scrolling shoot-em-up bullet hell made in a weekend for the 2021 Paint Jam with the theme \"Campbell's Soup\". As the main designer for this game, I not only helped flesh out the central concept of the game - one in which you fight various soup bosses in order to reign 'soupreme' - but also designed the bullet patterns and battle mechanics for the three boss fights.",
             "tech": 
             [
                 "Unity"
@@ -52,11 +52,11 @@
                 "Game Jam",
                 "In Progress"
             ] ,
-            "desc": "test description",
+            "desc": "Patently Awful Soccer Simulator is a physics-based soccer simulation acrade game that I made in a weekend for WolverineSoft's 2021 Shammy Game Jam. The current version of the game has the player playing soccer with a gun against a rather simple AI, but I plan to expand it to have new control schemes, better AI, and potentially multiplayer functionality when I find the time for it.",
             "tech": 
             [
                 "Godot",
-                "Asesprite",
+                "Aseprite",
                 "Deflemask"
             ],
             "git": "https://github.com/Kiptoke/PatentlyAwfulSoccer",
@@ -73,7 +73,7 @@
                 "Full Game",
                 "Finished"
             ] ,
-            "desc": "test description",
+            "desc": "Troubled Waters is a top-down strategic-action game in which you control and manage a privateer trying to save the Tradewind Isles from a band of nasty pirates. I was part of a team of 4 other developers that created this game over 3 months as our final project for EECS 494, the game development course at the University of Michigan. I was the sole designer, artist, and musician for the entirety of the game's development. This means that I largely created all the music, sound effects, graphics, level designs, ship designs, UIs, and encounters for the entire game.",
             "tech": 
             [
                 "Unity",
