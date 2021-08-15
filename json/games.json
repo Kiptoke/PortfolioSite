@@ -33,7 +33,7 @@
                 "Game Jam",
                 "Finished"
             ] ,
-            "desc": "Soupremacy is a side-scrolling shoot-em-up bullet hell made in a weekend for the 2021 Paint Jam with the theme \"Campbell's Soup\". As the main designer for this game, I not only helped flesh out the central concept of the game - one in which you fight various soup bosses in order to reign 'soupreme' - but also designed the bullet patterns and battle mechanics for the three boss fights.",
+            "desc": "Soupremacy is a 2D side-scrolling boss rush bullet hell made in a weekend for the 2021 Paint Jam with the theme \"Campbell's Soup\". As the main designer for this game, I not only helped flesh out the central concept of the game - one in which you fight various soup bosses in order to reign 'soupreme' - but also designed the bullet patterns and battle mechanics for the three boss fights.",
             "tech": 
             [
                 "Unity"
@@ -52,7 +52,7 @@
                 "Game Jam",
                 "In Progress"
             ] ,
-            "desc": "Patently Awful Soccer Simulator is a physics-based soccer simulation acrade game that I made in a weekend for WolverineSoft's 2021 Shammy Game Jam. The current version of the game has the player playing soccer with a gun against a rather simple AI, but I plan to expand it to have new control schemes, better AI, and potentially multiplayer functionality when I find the time for it.",
+            "desc": "Patently Awful Soccer Simulator is a 2D physics-based soccer simulation acrade game that I made in a weekend for WolverineSoft's 2021 Shammy Game Jam, with the theme \"What Could Go Wrong?\". In it, you play a normal game of soccer, but instead of kicking the ball, you shoot it. The current version of the game has the player playing soccer with a gun against a rather simple AI, but I plan to expand it to have new control schemes, better AI, and potentially multiplayer functionality when I find the time for it.",
             "tech": 
             [
                 "Godot",
@@ -73,7 +73,7 @@
                 "Full Game",
                 "Finished"
             ] ,
-            "desc": "Troubled Waters is a top-down strategic-action game in which you control and manage a privateer trying to save the Tradewind Isles from a band of nasty pirates. I was part of a team of 4 other developers that created this game over 3 months as our final project for EECS 494, the game development course at the University of Michigan. I was the sole designer, artist, and musician for the entirety of the game's development. This means that I largely created all the music, sound effects, graphics, level designs, ship designs, UIs, and encounters for the entire game.",
+            "desc": "Troubled Waters is a 2D top-down strategic-action game in which you control and manage a privateer trying to save the Tradewind Isles from a band of nasty pirates. I was part of a team of 4 other developers that created this game over 3 months as our final project for EECS 494, the game development course at the University of Michigan. I was the sole designer, artist, and musician for the entirety of the game's development. This means that I largely created all the music, sound effects, graphics, level designs, ship designs, UIs, and encounters for the entire game.",
             "tech": 
             [
                 "Unity",
@@ -97,7 +97,7 @@
                 "Full Game",
                 "Finished"
             ] ,
-            "desc": "test description",
+            "desc": "Desolation Place is a first person horror game in which you try to collect three memories of your past while stealthily avoiding noise-sensing monsters. I was the lead of the level design pod for this summer-long project, meaning that I was in charge of determining the priorities and tasks of my multi-disciplinary team for each of our sprints. For my own work, I mapped out layouts for three main rooms in the entire project, and worked closely with my fellow leads to keep all of our work coordinated and on track.",
             "tech": 
             [
                 "Unity",
@@ -117,7 +117,7 @@
                 "Game Jam",
                 "Finished"
             ] ,
-            "desc": "test description",
+            "desc": "Danger Duck is a top down 2D shooter in which you seek to take down a secret lab making hand-drawn abominations. I created it in the span of a week for the 'I Can't Draw but Want to Make a Game' game jam in the summer of 2020. Most notably, I outsourced my art for this game, meaning that all art assets in the game apart from the main character and level tiles were drawings made by my close friends and given to me. At some point, I might revisit this game and remake it, so I can fully execute the vision that I had for this game.",
             "tech": 
             [
                 "Godot",
@@ -137,7 +137,7 @@
                 "Game Jam",
                 "Finished"
             ] ,
-            "desc": "test description",
+            "desc": "Ok, Zoomers is a 2D arcade game in which you try to avoid getting hit by asteroids and going for a high score. It was made for WolverineSoft's 2020 June Jam, with the theme of \"Zoom\". Unlike other game jams, where I would work over a weekend, I joined this one incredibly last-minute, meaning that this game was actually made in about 3 hours. For that time, I'm actually pretty happy about it, given that I managed to add in features I had never worked with before, such as particle effects and tweening.",
             "tech": 
             [
                 "Godot",
@@ -157,7 +157,7 @@
                 "Full Game",
                 "Finished"
             ] ,
-            "desc": "test description",
+            "desc": "Io is a 2D side-scrolling platformer, in which the player has to delve deep into the planet in order to discover why their village tree was dying. The special gimmick of this game was that the player could throw their sword in order to teleport a short distance, allowing for an incredible level of mobility througout the game. I worked as a UI Designer as part of a larger UI team, and helped to design the look of the main menu, pause menu, and in-game GUI.",
             "tech": 
             [
                 "Unity"
@@ -176,7 +176,7 @@
                 "Technical Demo",
                 "Finished"
             ] ,
-            "desc": "test description",
+            "desc": "PyPIR Bot, or the Python Price Is Right Bot, is a bot that can be used in a Discord server to play the price-guessing game from 'The Price is Right' using links from Amazon. I made it in the span of a week during my winter break. It mainly takes advantage of two Python 3 libraries - requests and BeautifulSoup4 - which would be used to scrape an Amazon link sent to it and store the name and price of the item for people to guess on in a Discord server. Unfortunately, the bot is not active and likely not functional, since Amazon's protections against web scraping have gotten a lot stricter.",
             "tech": 
             [
                 "Python 3",
@@ -197,7 +197,7 @@
                 "Game Jam",
                 "Finished"
             ] ,
-            "desc": "test description",
+            "desc": "Starship Slime is a pixel-art arcade game in which you're a space janitor tasked with cleaning up an infestation of slime on an intergalactic starship. It was made in a weekend for WolverineSoft's 2019 Turkey Game Jam, where the theme was \"Start Small\". I took that quite literally, as I decided to use this jam to explore one of my favorite game dev tools, the miniture Pico-8 fantasy console. All the code, art, and music were designed in Pico-8, and I am quite proud of the final product.",
             "tech": 
             [
                 "Pico-8"
@@ -216,7 +216,7 @@
                 "Game Jam",
                 "Finished"
             ] ,
-            "desc": "test description",
+            "desc": "The Powerpoint Experience is an inside joke that I made for the 2019 WolverineSoft Pumpkin Game Jam, with the theme of \"Eclipse\". The game itself is a chronicle of it's own development, along with plenty of inside jokes understandable only to people who participated in the jam itself. Play at your own risk.",
             "tech": 
             [
                 "Microsoft PowerPoint"
@@ -235,7 +235,7 @@
                 "Game Jam",
                 "Finished"
             ] ,
-            "desc": "test description",
+            "desc": "A literal \"tower defense game\", Falling Through Time is a 2D arcade game where you defend yourself against enemies attempting to climb your tower and remove you from power. You get new weapons and enemies as the game progresses, signaled by the literal passage of time. It was made in a weekend for the 2018 WolverineSoft Pumpkin Jam, with the theme of 'Fall'. I sought to emulate that in the most ways possible, as you use falling projectiles to defend yourself against enemies who would lead to the fall of your empire. Also it's autumn.",
             "tech": 
             [
                 "Construct 2",
