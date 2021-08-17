@@ -13,7 +13,8 @@ const iama = Vue.createApp({
                 'musician',
                 'cybersecurity fan',
                 'D&D enthusiast',
-                'former campaign manager'
+                'former campaign manager',
+                'chiptune composer'
             ]
         }
     },

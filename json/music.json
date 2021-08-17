@@ -1,0 +1,81 @@
+{
+    "music": 
+    [
+        {
+            "name": "Persona 4 - Nevermore",
+            "id": "p4-nevermore",
+            "date": "May 2021",
+            "tags": 
+            [
+                "Chiptune",
+                "VGM Cover"
+            ],
+            "desc": "A cover of the true ending credits theme for Persona 4, originally made as a graduation gift for two of my close friends. Made using Famitracker.",
+            "url": "https://youtu.be/OIF0509s4BU"
+        },
+        {
+            "name": "Friday Night Funkin' - Zavodila",
+            "id": "fnf-zavodila",
+            "date": "May 2021",
+            "tags": 
+            [
+                "Chiptune",
+                "VGM Cover"
+            ],
+            "desc": "I got bored one day during work and was really into Friday Night Funkin', so I began thinking about how I could cover this song in chiptune. This is the result. This was made using Famitracker with the FDS addon.",
+            "url": "https://youtu.be/B1CRx1sWmDk"
+        },
+        {
+            "name": "Friendlies, Volume 1",
+            "id": "friendlies-v1",
+            "date": "December 2020",
+            "tags": 
+            [
+                "Chiptune",
+                "Original"
+            ],
+            "desc": "Friendlies was part Christmas gift, part self-improvement excercise. I wanted to try more original compositions since most of my work was in VGM covers, thus, I made Friendlies. These are a collection of short 1-minute musical sketches, each of which exemplify a memory I had made with my close friends. All of them were made using Famitracker.",
+            "url": "https://soundcloud.com/andrew-zhou-179586743/sets/friendlies-vol-1"
+        },
+        {
+            "name": "Troubled Waters OST",
+            "id": "troubled-waters",
+            "date": "November 2020",
+            "tags": 
+            [
+                "Chiptune",
+                "Original"
+            ],
+            "desc": "Troubled Waters was a 3 month long game development project I did for my game development course in university. I composed the entire score for it, which you can hear here. All of the music except for the main battle theme were composed using Deflemask. The battle theme was made in Famitracker.",
+            "url": null
+        },
+        {
+            "name": "Persona 4 - Heaven",
+            "id": "p4-heaven",
+            "date": "August 2020",
+            "tags": 
+            [
+                "Chiptune",
+                "VGM Cover"
+            ],
+            "desc": "My first exploration of chiptune and my first cover, I chose Persona 4's \"Heaven\" since it is my favorite track in the entire game. I also decided to challenge myself in the cover by strictly limiting myself to the NES's 2A03 sound card, and no expansions. Made in Famitracker.",
+            "url": "https://youtu.be/KQ90MEkRoyc"
+        },
+        {
+            "name": "Bubblegum KK",
+            "id": "bubblegum",
+            "date": "July 2020",
+            "tags": 
+            [
+                "Chiptune",
+                "VGM Cover"
+            ],
+            "desc": "My first exploration of chiptune and my first cover, I made a chiptune cover of Bubblegum KK based on the arrangement of one of my close friends. It was made using Famitracker, along with the MMC5 expansion chip.",
+            "url": "https://youtu.be/1-bFuxgWP6Q"
+        }
+    ],
+    "old-websites":
+    [
+
+    ]
+}

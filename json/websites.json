@@ -1,0 +1,55 @@
+{
+    "websites": 
+    [
+        {
+            "name": "This Portfolio",
+            "id": "portfolio",
+            "date": "August 2021",
+            "img": "portfolio.png",
+            "desc": "Originally created back in December 2018, I decided over the summer of 2021 that I would seriously polish up my website in preparation for the new grad job search. I decided to use some of the skills that I learned in university, such as using the Vue framework and using the Jinja2 Python library to generate static pages from a JSON file.",
+            "tech": 
+            [
+                "HTML/CSS",
+                "Bootstrap",
+                "Vue",
+                "Python 3"
+            ],
+            "git": "https://github.com/Kiptoke/PortfolioSite",
+            "url": "https://www.kiptoke.com/"
+        },
+        {
+            "name": "OneTrust",
+            "id": "onetrust",
+            "date": "July 2021",
+            "img": "onetrust.png",
+            "desc": "I worked as a User Interface Development intern for OneTrust from May - July 2021, where I worked on improving and adding features to their Cookie Compliance product. Mainly, I worked on adding usability and quality of life improvements to their autoblocking features. One of these features was a column in their scripts table such that web admins could see at a glance whether or not their sites had autoblocking enabled. Another feature was a modal that would appear when the user changed the autoblocking status, so users would remember to update their local scripts on their own website.",
+            "tech": 
+            [
+                "HTML/CSS",
+                "Angular",
+                "Typescript",
+                "Java"
+            ],
+            "git": null,
+            "url": "https://www.onetrust.com/products/cookie-consent/"
+        },
+        {
+            "name": "CryptoCompanion",
+            "id": "cryptocompanion",
+            "date": "April 2017",
+            "img": "cryptocompanion.png",
+            "desc": "The CryptoCompanion was a site I made for the 2017 Pennsylvania High School Computer Fair. It is an educational site in which users can learn the history of cryptography, how to do some famous ciphers, and the basics of cybersecurity. It won second place at the statewide level for web design.",
+            "tech": 
+            [
+                "HTML/CSS",
+                "Bootstrap"
+            ],
+            "git": "https://github.com/Kiptoke/CryptoCompanion",
+            "url": "https://cryptocompanion.netlify.app/"
+        }
+    ],
+    "old-websites":
+    [
+
+    ]
+}

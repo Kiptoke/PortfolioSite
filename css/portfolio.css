@@ -30,11 +30,9 @@ footer{
   text-align: center;
 }
 
-@media only screen and (max-width: 768px)
-{
-  footer{
-    position: relative;
-  }
+.navbar{
+  font-family: 'Anaheim', sans-serif;
+  font-size: 20px;
 }
 
 /* ---------- Front Page CSS ---------- */
@@ -123,9 +121,9 @@ footer{
 }
 
 /* ---------- Modal CSS ---------- */
-.navbar{
+
+.modal-title{
   font-family: 'Anaheim', sans-serif;
-  font-size: 20px;
 }
 
 /* ---------- Content Page CSS ---------- */
@@ -189,9 +187,27 @@ footer{
   display: none;
 }
 
+/* Websites Page */
+
+.website-box{
+  display: flex;
+  margin: 1vh 1vw;
+}
+
+.website-photo{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.website-info{
+  margin-left: 3%;
+}
+
 /* ----------- MEDIA QUERIES ---------- */
 
 /* MOBILE SCREENS */
+
 @media only screen and (max-width: 768px)
 {
   .index-card{
@@ -204,5 +220,9 @@ footer{
 
   .explain{
     font-size: 18px;
+  }
+
+  footer{
+    position: relative;
   }
 }
