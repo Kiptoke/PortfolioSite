@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html lang="en" class='bg-blue-gradient'>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Required Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+        <!-- CSS Files -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="css/portfolio.css" rel="stylesheet" type="text/css">
+        <link href="css/colors.css" rel="stylesheet" type="text/css">
+
+        <!-- JS Libraries + Files -->
+        <script src="https://unpkg.com/vue@3.2.4/dist/vue.global.prod.js"></script>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="graphics/icons/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="graphics/icons/favicon//favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="graphics/icons/favicon//favicon-16x16.png">
+        <link rel="manifest" href="graphics/icons/favicon//site.webmanifest">
+
+        <title>Andrew Zhou - Games</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark-blue">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Games</a>
+                        <a class="nav-link" href="websites.html">Websites</a>
+                        <a class="nav-link" href="music.html">Music</a>
+                        <a class="nav-link" href="pdf/resume.pdf" target="_blank">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="content-page">
+            <div class='white-text'>
+                <p class="title"><b>Games</b></p>
+                <p class='explain'>Located here you will see all the games that I have had a hand in making throughout the years, from game jams, to personal projects, to professional releases.</p>
+            </div>
+            
+            
+            <!-- Games -->
+            <div class='grid'>
+                {% for game in games %}
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#{{game.id}}">
+                        <img src='graphics/games/{{game.img}}' class='grid-photo' alt='{{game.name}}'></img>
+                        <div class='display-title'><b>{{game.name}}</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="{{game.id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="{{game.id}}-label"><b>{{game.name}}</b></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> {{game.date}}</li>
+                                    <li><b>My Role:</b> {{game.role}}</li>
+                                    <li>
+                                        <b>Tech Used:</b> 
+                                        {% for tech in game.tech %}
+                                            <span class="badge bg-secondary">{{tech}}</span>
+                                        {% endfor %}
+                                    </li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        {% for tag in game.tags %}
+                                            <span class="badge bg-primary">{{tag}}</span>
+                                        {% endfor %}
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>{{game.desc}}</p>
+                        </div>
+                        <div class="modal-footer">
+                            {% if game.git %}
+                            <form action="{{game.git}}" target="_blank">
+                                <button type="submit" class="btn btn-secondary">GitHub</button>
+                            </form>
+                            {% endif %}
+                            {% if game.url %}
+                            <form action="{{game.url}}" target="_blank">
+                                <button type="submit" class="btn btn-primary">Play</button>
+                            </form>
+                            {% endif %}    
+                        </div>
+                    </div>
+                    </div>
+                </div>
+  
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

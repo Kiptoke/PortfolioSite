@@ -3,127 +3,83 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Required Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-        
-        <!-- Custom Additions -->
-        <link href="css/Portfolio CSS.css" rel="stylesheet" type="text/css">
-        <link href="jquery.js" type="jQuery">
+        <!-- CSS Files -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="css/portfolio.css" rel="stylesheet" type="text/css">
+        <link href="css/colors.css" rel="stylesheet" type="text/css">
+
+        <!-- JS Libraries + Files -->
+        <script src="https://unpkg.com/vue@3.2.4/dist/vue.global.prod.js"></script>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="graphics/icons/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="graphics/icons/favicon//favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="graphics/icons/favicon//favicon-16x16.png">
+        <link rel="manifest" href="graphics/icons/favicon//site.webmanifest">
 
         <title>Andrew Zhou</title>
     </head>
 
-    <body>
-
-        <!-- Header section and NavBar -->
-
-        <!-- update -->
-
-        <!-- Main Text -->
-
-        <section>
-            <div class="row">
-                <div class="col-3" style="margin: auto;filter: drop-shadow(0 0 5px #000000);">
-                    <img src="photos/fuji.jpg" style="width:100%">
-                </div> 
-                <div class="col-9">
-                    <h2>Hello! My name is</h2>
-                    <h1>Andrew Zhou</h1> 
-                    <h2>and I am a 
-                        <span id="changer">programmer.</span></h1>
-
-                        <script>    
-                            var words = ["programmer", "game developer & designer", "musician", "tall nerd", "web developer", "University of Michigan student", "gamer", "Gubernatorial campaign manager", "student organization officer"];
-                            var i = 0;
-                            var text = "programmer.";
-                            function _getChangedText() 
-                            {
-                                i = (i + 1) % words.length;
-                                return text.replace(/programmer/, words[i]);
-                            }
-                            function _changeText() 
-                            {
-                                var txt = _getChangedText();
-                                var d = document.getElementById("changer")
-                                d.className = "fade";
-                                setTimeout(function()
-                                {
-                                    d.className = "";
-                                    document.getElementById("changer").innerHTML = txt;
-                                }, 1000);
-                            }
-                            setInterval("_changeText()", 3000);
-                        </script>
-                    </h2>
-                    
-                </div>
-                        
-            </div>  
-            <hr>
-
-            <!-- Alternate Pages -->
-            <div class="row">
-                <div class="col">
-                    <h2>
-                        I make cool and interesting things. Here they are:
-                    </h2>
-                </div>
+    <body class='bg-light-green'>
+        <div id='intro' class="bg-blue-gradient white-text">
+            <img src="graphics/fuji.jpg" alt="Andrew"></img>
+            <div id='intro-text'>
+                <p>Hello, my name is</p>
+                <p id='intro-name' class='blue-green-text'><b>Andrew Zhou</b></p>
+                <p>and I am a <span id="i-am-a">{{ entry }}</span></p>
             </div>
-            <br>
-            <div class="row container">
-                <div class="col-4">
-                    <h4>
-                        <img src="photos/FallingThroughTime.png" class="photolink">
-                        <a href="games.html" class="centered">Games</a>
-                    </h4>
-                </div>
-                <div class="col-4">
-                    <h4>
-                        <img src="photos/Cryptocompanion.png" class="photolink">
-                        <a href="websites.html" class="centered">Websites</a>
-                    </h4>
-                </div>
-                <div class="col-4">
-                    <h4>
-                        <img src="photos/nearestNeighbor.png" class="photolink">
-                        <a href="programs.html" class="centered">Other Things</a>
-                    </h4>
-                </div>
+        </div>
+        <div id="test">
+
+        </div>
+        <div id='check-out'>
+            <p>I make some pretty cool and interesting things - check them out!</p>
+        </div>
+        <div class="row" id='front-row'>
+            <div class="col-12 col-md-3">
+                <a href="games.html">
+                    <div class="index-card translucent">
+                        <img src="graphics/drawings/game.png" alt="Games"></img>
+                        <p>Games</p>
+                    </div>
+                </a>
             </div>
-            
-            <div>
-                <h2>Additionally, here is my <a href="pdf/resume.pdf" style="color: #1C448E;" target="_blank">resume</a>.</h2>
+            <div class="col-12 col-md-3">
+                <a href="websites.html">
+                    <div class="index-card translucent">
+                        <img src="graphics/drawings/web.png" alt="Websites"></img>
+                        <p>Websites</p>
+                    </div> 
+                </a>
             </div>
+            <div class="col-12 col-md-3">
+                <a href="music.html">
+                    <div class="index-card translucent">
+                        <img src="graphics/drawings/music.png" alt="Music"></img>
+                        <p>Music</p>
+                    </div>  
+                </a>
+            </div>
+            <div class="col-12 col-md-3">
+                <a href="pdf/resume.pdf" target="_blank">
+                    <div class="index-card translucent">
+                        <img src="graphics/drawings/resume.png" alt="Resume"></img>
+                        <p>Resume</p>
+                    </div>
+                </a>
+            </div>
+        </div>
 
-            <!-- Social Media -->
+        <footer id='social'>
+            <social-media></social-media>
+        </footer>
 
-            <footer>
-                <a href="mailto:andzhou@umich.edu?" style="text-decoration:none;">
-                    <img src="icons/email.png" alt="Email" class="icon">
-                </a>
-                <a href="https://www.facebook.com/kiptoke" style="text-decoration:none;">
-                    <img src="icons/facebook.png" alt="Facebook" class="icon">
-                </a>
-                <a href="https://twitter.com/KiptokeDev" style="text-decoration:none;">
-                    <img src="icons/twitter.png" alt="Twitter" class="icon">
-                </a>
-                <a href="https://github.com/Kiptoke" style="text-decoration:none;">
-                    <img src="icons/github.png" alt="Github" class="icon">
-                </a>
-                <a href="https://www.youtube.com/channel/UCTABjZeu0Hkbukw8WiJlwLA" style="text-decoration:none;">
-                    <img src="icons/youtube.png" alt="Youtube" class="icon">
-                </a>
+        <script type="text/javascript" src="js/script.js"></script>
 
-            </footer>
-
-        </section>
     </body>
 </html>

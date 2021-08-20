@@ -1,0 +1,55 @@
+/* COLOR PALETTE
+
+Blue Gradient: #0a2342 to #1c448e
+Persian Green (bluegreen): #1ba098
+Celeste: #B9F3EF
+Off-white Text:  #EEFCFB
+
+Old Blue: #1c448e
+Old Green: #9ee3ac
+*/
+
+/* ---------- BACKGROUND COLORS --------- */
+
+.bg-light-green{ background-color: #B9F3EF; }
+.bg-blue-green{ background-color: #1ba098; }
+.bg-blue{ background-color: #1c448e; }
+.bg-dark-blue{ background-color: #0A2547; }
+.bg-blue-gradient{
+    background-image: linear-gradient(#0A2342,#1c448e);
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.translucent{
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 3px 12px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* ---------- TEXT COLORS ---------- */
+
+.white-text{
+    color: #EEFCFB;
+}
+
+.light-green-text{
+    color: #B9F3EF;
+}
+
+.blue-green-text{
+    color: #1ba098;
+}
+
+.blue-text{
+    color: #1c448e;
+}
+
+.dark-blue-text{
+    color: #0A2342;
+}
+

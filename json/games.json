@@ -1,0 +1,252 @@
+{
+    "games": 
+    [
+        {
+            "name": "Somnium Eleven",
+            "id": "somnium-eleven",
+            "date": "Fall 2021",
+            "role": "Developer",
+            "img": "somnium.png",
+            "tags": 
+            [
+                "Full Game",
+                "In Progress"
+            ] ,
+            "desc": "Somnium Eleven is a mobile isekai visual novel game by Nochi Studios, set to release in Fall 2021. Although it releases later this year, I worked on it as an intern from March - May 2021. As a programming intern, I helped to build the game's internal social media system, reworked parts of the in-game economy and store user interfaces, and also assisted in running user playtesting sessions. I also helped to develop tools for future developers, such as a script converter that converted Google Doc files from the writing team into usable JSON code for use in Unity.",
+            "tech": 
+            [
+                "Unity",
+                "Figma",
+                "Jira"
+            ],
+            "git": null,
+            "url": "https://nochistudios.com/somnium-eleven"
+        },
+        {
+            "name": "Soupremacy",
+            "id": "soupremacy",
+            "date": "May 2021",
+            "role": "Designer",
+            "img": "soupremacy.png",
+            "tags": 
+            [
+                "Game Jam",
+                "Finished"
+            ] ,
+            "desc": "Soupremacy is a 2D side-scrolling boss rush bullet hell made in a weekend for the 2021 Paint Jam with the theme \"Campbell's Soup\". As the main designer for this game, I not only helped flesh out the central concept of the game - one in which you fight various soup bosses in order to reign 'soupreme' - but also designed the bullet patterns and battle mechanics for the three boss fights.",
+            "tech": 
+            [
+                "Unity"
+            ],
+            "git": "https://github.com/badaminatasha/PAINT-YAM",
+            "url": "https://kapitha.itch.io/soupremacy"
+        },
+        {
+            "name": "Patently Awful Soccer Simulator",
+            "id": "pass-soccer",
+            "date": "March 2021",
+            "role": "Solo Developer",
+            "img": "pass.png",
+            "tags": 
+            [
+                "Game Jam",
+                "In Progress"
+            ] ,
+            "desc": "Patently Awful Soccer Simulator is a 2D physics-based soccer simulation acrade game that I made in a weekend for WolverineSoft's 2021 Shammy Game Jam, with the theme \"What Could Go Wrong?\". In it, you play a normal game of soccer, but instead of kicking the ball, you shoot it. The current version of the game has the player playing soccer with a gun against a rather simple AI, but I plan to expand it to have new control schemes, better AI, and potentially multiplayer functionality when I find the time for it.",
+            "tech": 
+            [
+                "Godot",
+                "Aseprite",
+                "Deflemask"
+            ],
+            "git": "https://github.com/Kiptoke/PatentlyAwfulSoccer",
+            "url": "https://kiptoke.itch.io/pass-soccer"
+        },
+        {
+            "name": "Troubled Waters",
+            "id": "troubled-waters",
+            "date": "November 2020",
+            "role": "Lead Designer, Lead Artist, Lead Musician",
+            "img": "troubled.png",
+            "tags": 
+            [
+                "Full Game",
+                "Finished"
+            ] ,
+            "desc": "Troubled Waters is a 2D top-down strategic-action game in which you control and manage a privateer trying to save the Tradewind Isles from a band of nasty pirates. I was part of a team of 4 other developers that created this game over 3 months as our final project for EECS 494, the game development course at the University of Michigan. I was the sole designer, artist, and musician for the entirety of the game's development. This means that I largely created all the music, sound effects, graphics, level designs, ship designs, UIs, and encounters for the entire game.",
+            "tech": 
+            [
+                "Unity",
+                "Adobe Illustrator",
+                "Adobe Photoshop",
+                "Deflemask",
+                "Audacity",
+                "Jira"
+            ],
+            "git": null,
+            "url": "https://kiptoke.itch.io/troubled-waters"
+        },
+        {
+            "name": "Desolation Place",
+            "id": "desolation-place",
+            "date": "August 2020",
+            "role": "Level Design Lead",
+            "img": "desolation.png",
+            "tags": 
+            [
+                "Full Game",
+                "Finished"
+            ] ,
+            "desc": "Desolation Place is a first person horror game in which you try to collect three memories of your past while stealthily avoiding noise-sensing monsters. I was the lead of the level design pod for this summer-long project, meaning that I was in charge of determining the priorities and tasks of my multi-disciplinary team for each of our sprints. For my own work, I mapped out layouts for three main rooms in the entire project, and worked closely with my fellow leads to keep all of our work coordinated and on track.",
+            "tech": 
+            [
+                "Unity",
+                "Jira"
+            ],
+            "git": null,
+            "url": "https://wolverinesoft-studio.itch.io/desolation-place"
+        },
+        {
+            "name": "Danger Duck",
+            "id": "danger-duck",
+            "date": "August 2020",
+            "role": "Solo Developer",
+            "img": "duck.png",
+            "tags": 
+            [
+                "Game Jam",
+                "Finished"
+            ] ,
+            "desc": "Danger Duck is a top down 2D shooter in which you seek to take down a secret lab making hand-drawn abominations. I created it in the span of a week for the 'I Can't Draw but Want to Make a Game' game jam in the summer of 2020. Most notably, I outsourced my art for this game, meaning that all art assets in the game apart from the main character and level tiles were drawings made by my close friends and given to me. At some point, I might revisit this game and remake it, so I can fully execute the vision that I had for this game.",
+            "tech": 
+            [
+                "Godot",
+                "Inkscape"
+            ],
+            "git": "https://github.com/Kiptoke/DangerDuck",
+            "url": "https://kiptoke.itch.io/danger-duck"
+        },
+        {
+            "name": "Ok, Zoomers",
+            "id": "zoomers",
+            "date": "June 2020",
+            "role": "Solo Developer",
+            "img": "zoomers.png",
+            "tags": 
+            [
+                "Game Jam",
+                "Finished"
+            ] ,
+            "desc": "Ok, Zoomers is a 2D arcade game in which you try to avoid getting hit by asteroids and going for a high score. It was made for WolverineSoft's 2020 June Jam, with the theme of \"Zoom\". Unlike other game jams, where I would work over a weekend, I joined this one incredibly last-minute, meaning that this game was actually made in about 3 hours. For that time, I'm actually pretty happy about it, given that I managed to add in features I had never worked with before, such as particle effects and tweening.",
+            "tech": 
+            [
+                "Godot",
+                "Inkscape"
+            ],
+            "git": "https://github.com/Kiptoke/Ok-Zoomers",
+            "url": "https://kiptoke.itch.io/ok-zoomers"
+        },
+        {
+            "name": "Io",
+            "id": "io",
+            "date": "April 2020",
+            "role": "UI Designer",
+            "img": "io.jpg",
+            "tags": 
+            [
+                "Full Game",
+                "Finished"
+            ] ,
+            "desc": "Io is a 2D side-scrolling platformer, in which the player has to delve deep into the planet in order to discover why their village tree was dying. The special gimmick of this game was that the player could throw their sword in order to teleport a short distance, allowing for an incredible level of mobility througout the game. I worked as a UI Designer as part of a larger UI team, and helped to design the look of the main menu, pause menu, and in-game GUI.",
+            "tech": 
+            [
+                "Unity"
+            ],
+            "git": null,
+            "url": "https://wolverinesoft-studio.itch.io/io"
+        },
+        {
+            "name": "PyPIR Bot",
+            "id": "pypir",
+            "date": "January 2020",
+            "role": "Solo Developer",
+            "img": "pypir.png",
+            "tags": 
+            [
+                "Technical Demo",
+                "Finished"
+            ] ,
+            "desc": "PyPIR Bot, or the Python Price Is Right Bot, is a bot that can be used in a Discord server to play the price-guessing game from 'The Price is Right' using links from Amazon. I made it in the span of a week during my winter break. It mainly takes advantage of two Python 3 libraries - requests and BeautifulSoup4 - which would be used to scrape an Amazon link sent to it and store the name and price of the item for people to guess on in a Discord server. Unfortunately, the bot is not active and likely not functional, since Amazon's protections against web scraping have gotten a lot stricter.",
+            "tech": 
+            [
+                "Python 3",
+                "Discord",
+                "BeautifulSoup4"
+            ],
+            "git": "https://github.com/Kiptoke/PyPIR-Bot",
+            "url": null
+        },
+        {
+            "name": "Starship Slime",
+            "id": "starship-slime",
+            "date": "November 2019",
+            "role": "Solo Developer",
+            "img": "starship.png",
+            "tags": 
+            [
+                "Game Jam",
+                "Finished"
+            ] ,
+            "desc": "Starship Slime is a pixel-art arcade game in which you're a space janitor tasked with cleaning up an infestation of slime on an intergalactic starship. It was made in a weekend for WolverineSoft's 2019 Turkey Game Jam, where the theme was \"Start Small\". I took that quite literally, as I decided to use this jam to explore one of my favorite game dev tools, the miniture Pico-8 fantasy console. All the code, art, and music were designed in Pico-8, and I am quite proud of the final product.",
+            "tech": 
+            [
+                "Pico-8"
+            ],
+            "git": null,
+            "url": "https://kiptoke.itch.io/starship-slime"
+        },
+        {
+            "name": "The Powerpoint Experience",
+            "id": "powerpoint",
+            "date": "March 2019",
+            "role": "Solo Developer",
+            "img": "powerpoint.png",
+            "tags": 
+            [
+                "Game Jam",
+                "Finished"
+            ] ,
+            "desc": "The Powerpoint Experience is an inside joke that I made for the 2019 WolverineSoft Pumpkin Game Jam, with the theme of \"Eclipse\". The game itself is a chronicle of it's own development, along with plenty of inside jokes understandable only to people who participated in the jam itself. Play at your own risk.",
+            "tech": 
+            [
+                "Microsoft PowerPoint"
+            ],
+            "git": null,
+            "url": "https://kiptoke.itch.io/the-powerpoint-experience"
+        },
+        {
+            "name": "Falling Through Time",
+            "id": "falling-through-time",
+            "date": "October 2018",
+            "role": "Solo Developer",
+            "img": "FallingThroughTime.png",
+            "tags": 
+            [
+                "Game Jam",
+                "Finished"
+            ] ,
+            "desc": "A literal \"tower defense game\", Falling Through Time is a 2D arcade game where you defend yourself against enemies attempting to climb your tower and remove you from power. You get new weapons and enemies as the game progresses, signaled by the literal passage of time. It was made in a weekend for the 2018 WolverineSoft Pumpkin Jam, with the theme of 'Fall'. I sought to emulate that in the most ways possible, as you use falling projectiles to defend yourself against enemies who would lead to the fall of your empire. Also it's autumn.",
+            "tech": 
+            [
+                "Construct 2",
+                "Inkscape"
+            ],
+            "git": null,
+            "url": "https://kiptoke.itch.io/falling-through-time"
+        }
+    ],
+    "old-games":
+    [
+
+    ]
+}
