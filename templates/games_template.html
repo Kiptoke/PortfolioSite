@@ -15,7 +15,7 @@
         <link href="css/colors.css" rel="stylesheet" type="text/css">
 
         <!-- JS Libraries + Files -->
-        <script src="https://unpkg.com/vue@next"></script>
+        <script src="https://unpkg.com/vue@3.2.4/dist/vue.global.prod.js"></script>
 
         <title>Andrew Zhou - Games</title>
     </head>
@@ -33,7 +33,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Games</a>
                         <a class="nav-link" href="websites.html">Websites</a>
                         <a class="nav-link" href="music.html">Music</a>
-                        <a class="nav-link" href="pdf/resume.pdf">Resume</a>
+                        <a class="nav-link" href="pdf/resume.pdf" target="_blank">Resume</a>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                 <!-- Game Card -->
                 <a>
                     <div class="display-box" data-bs-toggle="modal" data-bs-target="#{{game.id}}">
-                        <img src='graphics/games/{{game.img}}' class='game-photo' alt='{{game.name}}'></img>
+                        <img src='graphics/games/{{game.img}}' class='grid-photo' alt='{{game.name}}'></img>
                         <div class='display-title'><b>{{game.name}}</b></div>
                     </div>
                 </a>
@@ -106,8 +106,5 @@
                 {% endfor %}
             </div>
         </div>
-
-        <script type="text/javascript" src="js/script.js"></script>
-
     </body>
 </html>

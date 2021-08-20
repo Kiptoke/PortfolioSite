@@ -15,7 +15,7 @@
         <link href="css/colors.css" rel="stylesheet" type="text/css">
 
         <!-- JS Libraries + Files -->
-        <script src="https://unpkg.com/vue@next"></script>
+        <script src="https://unpkg.com/vue@3.2.4/dist/vue.global.prod.js"></script>
 
         <title>Andrew Zhou - Websites</title>
     </head>
@@ -33,41 +33,69 @@
                         <a class="nav-link "href="games.html">Games</a>
                         <a class="nav-link active" aria-current="page" href="#">Websites</a>
                         <a class="nav-link" href="music.html">Music</a>
-                        <a class="nav-link" href="pdf/resume.pdf">Resume</a>
+                        <a class="nav-link" href="pdf/resume.pdf" target="_blank">Resume</a>
                     </div>
                 </div>
             </div>
         </nav>
         
-        <div class="content-page white-text">
-            <div>
+        <!-- Games -->
+        <div class="content-page">
+            <div class='white-text'>
                 <p class="title"><b>Websites</b></p>
-                <p class='explain'>Here, you can see all the websites that I've created or have had a hand in creating.</p>
+                <p class='explain'>Here is a collection of all the websites I've had a hand in creating, ranging from professional work to personal hobby projects.</p>
             </div>
-            
+            <div class='grid big'>
+                {% for site in websites %}
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#{{site.id}}">
+                        <img src='graphics/websites/{{site.img}}' class='grid-photo' alt='{{site.name}}'></img>
+                        <div class='display-title'><b>{{site.name}}</b></div>
+                    </div>
+                </a>
 
-            <!-- Websites -->
-            {% for site in websites %}
+                <!-- Modal -->
+                <div class="modal fade" id="{{site.id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="{{site.id}}-label"><b>{{site.name}}</b></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> {{site.date}}</li>
+                                    <li>
+                                        <b>Tech Used:</b> 
+                                        {% for tech in site.tech %}
+                                            <span class="badge bg-secondary">{{tech}}</span>
+                                        {% endfor %}
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>{{site.desc}}</p>
+                        </div>
+                        <div class="modal-footer">
+                            {% if site.git %}
+                            <form action="{{site.git}}" target="_blank">
+                                <button type="submit" class="btn btn-secondary">GitHub</button>
+                            </form>
+                            {% endif %}
+                            {% if site.url %}
+                            <form action="{{site.url}}" target="_blank">
+                                <button type="submit" class="btn btn-primary">Visit</button>
+                            </form>
+                            {% endif %}    
+                        </div>
+                    </div>
+                    </div>
+                </div>
 
-            <div class="website-box">
-                <img src='graphics/websites/{{site.img}}' class='website-photo' alt='{{site.name}}'></img>
-                <div class="website-info">
-                    <p><b>{{site.name}} | {{site.date}}</b></p>
-                    <p>
-                        <b>Tech Used:</b> 
-                        {% for tech in site.tech %}
-                            <span class="badge bg-secondary">{{tech}}</span>
-                        {% endfor %}
-                    </p>
-                    <p>{{site.desc}}</p>
-                </div> 
+                {% endfor %}
             </div>
-            
-
-            {% endfor %}
         </div>
-
-        <script type="text/javascript" src="js/script.js"></script>
-
     </body>
 </html>

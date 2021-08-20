@@ -15,7 +15,7 @@
         <link href="css/colors.css" rel="stylesheet" type="text/css">
 
         <!-- JS Libraries + Files -->
-        <script src="https://unpkg.com/vue@next"></script>
+        <script src="https://unpkg.com/vue@3.2.4/dist/vue.global.prod.js"></script>
 
         <title>Andrew Zhou - Websites</title>
     </head>
@@ -33,39 +33,66 @@
                         <a class="nav-link "href="games.html">Games</a>
                         <a class="nav-link" href="websites.html">Websites</a>
                         <a class="nav-link active" aria-current="page" href="#">Music</a>
-                        <a class="nav-link" href="pdf/resume.pdf">Resume</a>
+                        <a class="nav-link" href="pdf/resume.pdf" target="_blank">Resume</a>
                     </div>
                 </div>
             </div>
         </nav>
         
-        <div class="content-page white-text">
-            <div>
+        <!-- Games -->
+        <div class="content-page">
+            <div class='white-text'>
                 <p class="title"><b>Music</b></p>
-                <p class='explain'>Here, you can see all the websites that I've created or have had a hand in creating.</p>
+                <p class='explain'>I also make music! Here you can see all the music I've worked on, from chiptune covers to original compositions. Please take a listen!</p>
             </div>
-            
+            <div class='grid big'>
+                {% for song in music %}
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#{{song.id}}">
+                        <img src='graphics/albums/{{song.img}}' class='grid-photo' alt='{{song.name}}'></img>
+                        <div class='display-title'><b>{{song.name}}</b></div>
+                    </div>
+                </a>
 
-            <!-- Music -->
-            {% for song in music %}
+                <!-- Modal -->
+                <div class="modal fade" id="{{song.id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="{{song.id}}-label"><b>{{song.name}}</b></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> {{song.date}}</li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        {% for tag in song.tags %}
+                                            <span class="badge bg-secondary">{{tag}}</span>
+                                        {% endfor %}
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>{{song.desc}}</p>
+                        </div>
+                        <div class="modal-footer">
+                            {% if song.url %}
+                            <form action="{{song.url}}" target="_blank">
+                                <button type="submit" class="btn btn-primary">Listen</button>
+                            </form>
+                            {% else %}
+                            <p>Coming soon!</p>
+                            {% endif %}    
+                        </div>
+                    </div>
+                    </div>
+                </div>
 
-            <div class="music-box">
-                <div class="music-info">
-                    <p><b>{{song.name}} | {{song.date}}</b></p>
-                    <p>
-                        <b>Tags:</b> 
-                        {% for tag in song.tags %}
-                            <span class="badge bg-secondary">{{tag}}</span>
-                        {% endfor %}
-                    </p>
-                    <p>{{song.desc}}</p>
-                </div> 
+                {% endfor %}
             </div>
-
-            {% endfor %}
         </div>
-
-        <script type="text/javascript" src="js/script.js"></script>
-
     </body>
 </html>

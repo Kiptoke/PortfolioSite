@@ -15,7 +15,7 @@
         <link href="css/colors.css" rel="stylesheet" type="text/css">
 
         <!-- JS Libraries + Files -->
-        <script src="https://unpkg.com/vue@next"></script>
+        <script src="https://unpkg.com/vue@3.2.4/dist/vue.global.prod.js"></script>
 
         <title>Andrew Zhou - Websites</title>
     </head>
@@ -33,126 +33,289 @@
                         <a class="nav-link "href="games.html">Games</a>
                         <a class="nav-link" href="websites.html">Websites</a>
                         <a class="nav-link active" aria-current="page" href="#">Music</a>
-                        <a class="nav-link" href="pdf/resume.pdf">Resume</a>
+                        <a class="nav-link" href="pdf/resume.pdf" target="_blank">Resume</a>
                     </div>
                 </div>
             </div>
         </nav>
         
-        <div class="content-page white-text">
-            <div>
+        <!-- Games -->
+        <div class="content-page">
+            <div class='white-text'>
                 <p class="title"><b>Music</b></p>
-                <p class='explain'>Here, you can see all the websites that I've created or have had a hand in creating.</p>
+                <p class='explain'>I also make music! Here you can see all the music I've worked on, from chiptune covers to original compositions. Please take a listen!</p>
             </div>
-            
+            <div class='grid big'>
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#p4-nevermore">
+                        <img src='graphics/albums/nevermore.jpg' class='grid-photo' alt='Persona 4 - Nevermore'></img>
+                        <div class='display-title'><b>Persona 4 - Nevermore</b></div>
+                    </div>
+                </a>
 
-            <!-- Music -->
-            
+                <!-- Modal -->
+                <div class="modal fade" id="p4-nevermore" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="p4-nevermore-label"><b>Persona 4 - Nevermore</b></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> May 2021</li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-secondary">Chiptune</span>
+                                        
+                                            <span class="badge bg-secondary">VGM Cover</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>A cover of the true ending credits theme for Persona 4, originally made as a graduation gift for two of my close friends. Made using Famitracker.</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <form action="https://youtu.be/OIF0509s4BU" target="_blank">
+                                <button type="submit" class="btn btn-primary">Listen</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
 
-            <div class="music-box">
-                <div class="music-info">
-                    <p><b>Persona 4 - Nevermore | May 2021</b></p>
-                    <p>
-                        <b>Tags:</b> 
-                        
-                            <span class="badge bg-secondary">Chiptune</span>
-                        
-                            <span class="badge bg-secondary">VGM Cover</span>
-                        
-                    </p>
-                    <p>A cover of the true ending credits theme for Persona 4, originally made as a graduation gift for two of my close friends. Made using Famitracker.</p>
-                </div> 
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#fnf-zavodila">
+                        <img src='graphics/albums/zavodila.jpg' class='grid-photo' alt='Friday Night Funkin&#39; - Zavodila'></img>
+                        <div class='display-title'><b>Friday Night Funkin&#39; - Zavodila</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="fnf-zavodila" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="fnf-zavodila-label"><b>Friday Night Funkin&#39; - Zavodila</b></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> May 2021</li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-secondary">Chiptune</span>
+                                        
+                                            <span class="badge bg-secondary">VGM Cover</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>I got bored one day during work and was really into Friday Night Funkin&#39;, so I began thinking about how I could cover this song in chiptune. This is the result. This was made using Famitracker with the FDS addon.</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <form action="https://youtu.be/B1CRx1sWmDk" target="_blank">
+                                <button type="submit" class="btn btn-primary">Listen</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#friendlies-v1">
+                        <img src='graphics/albums/friendlies.png' class='grid-photo' alt='Friendlies, Volume 1'></img>
+                        <div class='display-title'><b>Friendlies, Volume 1</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="friendlies-v1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="friendlies-v1-label"><b>Friendlies, Volume 1</b></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> December 2020</li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-secondary">Chiptune</span>
+                                        
+                                            <span class="badge bg-secondary">Original</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>Friendlies was part Christmas gift, part self-improvement excercise. I wanted to try more original compositions since most of my work was in VGM covers, thus, I made Friendlies. These are a collection of short 1-minute musical sketches, each of which exemplify a memory I had made with my close friends. All of them were made using Famitracker.</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <form action="https://soundcloud.com/andrew-zhou-179586743/sets/friendlies-vol-1" target="_blank">
+                                <button type="submit" class="btn btn-primary">Listen</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#troubled-waters">
+                        <img src='graphics/albums/troubled-waters.png' class='grid-photo' alt='Troubled Waters OST'></img>
+                        <div class='display-title'><b>Troubled Waters OST</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="troubled-waters" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="troubled-waters-label"><b>Troubled Waters OST</b></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> November 2020</li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-secondary">Chiptune</span>
+                                        
+                                            <span class="badge bg-secondary">Original</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>Troubled Waters was a 3 month long game development project I did for my game development course in university. I composed the entire score for it, which you can hear here. All of the music except for the main battle theme were composed using Deflemask. The battle theme was made in Famitracker.</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <p>Coming soon!</p>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#p4-heaven">
+                        <img src='graphics/albums/heaven.png' class='grid-photo' alt='Persona 4 - Heaven'></img>
+                        <div class='display-title'><b>Persona 4 - Heaven</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="p4-heaven" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="p4-heaven-label"><b>Persona 4 - Heaven</b></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> August 2020</li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-secondary">Chiptune</span>
+                                        
+                                            <span class="badge bg-secondary">VGM Cover</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>My first exploration of chiptune and my first cover, I chose Persona 4&#39;s &#34;Heaven&#34; since it is my favorite track in the entire game. I also decided to challenge myself in the cover by strictly limiting myself to the NES&#39;s 2A03 sound card, and no expansions. Made in Famitracker.</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <form action="https://youtu.be/KQ90MEkRoyc" target="_blank">
+                                <button type="submit" class="btn btn-primary">Listen</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                
+                <!-- Game Card -->
+                <a>
+                    <div class="display-box" data-bs-toggle="modal" data-bs-target="#bubblegum">
+                        <img src='graphics/albums/bubblegum.jpg' class='grid-photo' alt='Bubblegum KK'></img>
+                        <div class='display-title'><b>Bubblegum KK</b></div>
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="bubblegum" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="bubblegum-label"><b>Bubblegum KK</b></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <b>Fast Facts:</b>
+                                <ul>
+                                    <li><b>Release Date:</b> July 2020</li>
+                                    <li>
+                                        <b>Tags:</b> 
+                                        
+                                            <span class="badge bg-secondary">Chiptune</span>
+                                        
+                                            <span class="badge bg-secondary">VGM Cover</span>
+                                        
+                                    </li>
+                                </ul> 
+                            </div>
+                            <p>My first exploration of chiptune and my first cover, I made a chiptune cover of Bubblegum KK based on the arrangement of one of my close friends. It was made using Famitracker, along with the MMC5 expansion chip.</p>
+                        </div>
+                        <div class="modal-footer">
+                            
+                            <form action="https://youtu.be/1-bFuxgWP6Q" target="_blank">
+                                <button type="submit" class="btn btn-primary">Listen</button>
+                            </form>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                
             </div>
-
-            
-
-            <div class="music-box">
-                <div class="music-info">
-                    <p><b>Friday Night Funkin&#39; - Zavodila | May 2021</b></p>
-                    <p>
-                        <b>Tags:</b> 
-                        
-                            <span class="badge bg-secondary">Chiptune</span>
-                        
-                            <span class="badge bg-secondary">VGM Cover</span>
-                        
-                    </p>
-                    <p>I got bored one day during work and was really into Friday Night Funkin&#39;, so I began thinking about how I could cover this song in chiptune. This is the result. This was made using Famitracker with the FDS addon.</p>
-                </div> 
-            </div>
-
-            
-
-            <div class="music-box">
-                <div class="music-info">
-                    <p><b>Friendlies, Volume 1 | December 2020</b></p>
-                    <p>
-                        <b>Tags:</b> 
-                        
-                            <span class="badge bg-secondary">Chiptune</span>
-                        
-                            <span class="badge bg-secondary">Original</span>
-                        
-                    </p>
-                    <p>Friendlies was part Christmas gift, part self-improvement excercise. I wanted to try more original compositions since most of my work was in VGM covers, thus, I made Friendlies. These are a collection of short 1-minute musical sketches, each of which exemplify a memory I had made with my close friends. All of them were made using Famitracker.</p>
-                </div> 
-            </div>
-
-            
-
-            <div class="music-box">
-                <div class="music-info">
-                    <p><b>Troubled Waters OST | November 2020</b></p>
-                    <p>
-                        <b>Tags:</b> 
-                        
-                            <span class="badge bg-secondary">Chiptune</span>
-                        
-                            <span class="badge bg-secondary">Original</span>
-                        
-                    </p>
-                    <p>Troubled Waters was a 3 month long game development project I did for my game development course in university. I composed the entire score for it, which you can hear here. All of the music except for the main battle theme were composed using Deflemask. The battle theme was made in Famitracker.</p>
-                </div> 
-            </div>
-
-            
-
-            <div class="music-box">
-                <div class="music-info">
-                    <p><b>Persona 4 - Heaven | August 2020</b></p>
-                    <p>
-                        <b>Tags:</b> 
-                        
-                            <span class="badge bg-secondary">Chiptune</span>
-                        
-                            <span class="badge bg-secondary">VGM Cover</span>
-                        
-                    </p>
-                    <p>My first exploration of chiptune and my first cover, I chose Persona 4&#39;s &#34;Heaven&#34; since it is my favorite track in the entire game. I also decided to challenge myself in the cover by strictly limiting myself to the NES&#39;s 2A03 sound card, and no expansions. Made in Famitracker.</p>
-                </div> 
-            </div>
-
-            
-
-            <div class="music-box">
-                <div class="music-info">
-                    <p><b>Bubblegum KK | July 2020</b></p>
-                    <p>
-                        <b>Tags:</b> 
-                        
-                            <span class="badge bg-secondary">Chiptune</span>
-                        
-                            <span class="badge bg-secondary">VGM Cover</span>
-                        
-                    </p>
-                    <p>My first exploration of chiptune and my first cover, I made a chiptune cover of Bubblegum KK based on the arrangement of one of my close friends. It was made using Famitracker, along with the MMC5 expansion chip.</p>
-                </div> 
-            </div>
-
-            
         </div>
-
-        <script type="text/javascript" src="js/script.js"></script>
-
     </body>
 </html>
