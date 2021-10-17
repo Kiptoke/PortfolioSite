@@ -2,9 +2,30 @@
     "games": 
     [
         {
+            "name": "Project Tower",
+            "id": "tower",
+            "date": "December 2021",
+            "role": "Designer and Programmer",
+            "img": "tower.png",
+            "tags": 
+            [
+                "Full Game",
+                "In Progress"
+            ] ,
+            "desc": "Project Tower (name pending) is a WolverineSoft Studio project that I am a designer and programmer in. We aim to make a tower defense game based on Norse mythology, where you play as a group of villagers trying to survive Ragnorok.",
+            "tech": 
+            [
+                "Unity",
+                "Figma",
+                "Jira"
+            ],
+            "git": null,
+            "url": null
+        },
+        {
             "name": "Somnium Eleven",
             "id": "somnium-eleven",
-            "date": "Fall 2021",
+            "date": "October 2021",
             "role": "Developer",
             "img": "somnium.png",
             "tags": 

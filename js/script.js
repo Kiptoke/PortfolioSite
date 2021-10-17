@@ -59,3 +59,16 @@ social.component('social-media', {
     </footer>`
 })
 social.mount('#social')
+
+const devblog = Vue.createApp({})
+devblog.component('devblog', {
+    template: `
+    <p>
+        <b>DevBlogs:</b> 
+        <ul>
+            <li><a href='devblog/prealpha1.html' style='text-decoration:none;'>Pre-Alpha 1</a></li>
+        </ul>
+    </p>
+    `
+})
+devblog.mount('#tower')
