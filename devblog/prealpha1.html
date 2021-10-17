@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html lang="en" class='bg-blue-gradient'>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Required Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+        <!-- CSS Files -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="../css/portfolio.css" rel="stylesheet" type="text/css">
+        <link href="../css/colors.css" rel="stylesheet" type="text/css">
+
+        <!-- JS Libraries + Files -->
+        <script src="https://unpkg.com/vue@3.2.4/dist/vue.global.prod.js"></script>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../graphics/icons/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../graphics/icons/favicon//favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../graphics/icons/favicon//favicon-16x16.png">
+        <link rel="manifest" href="../graphics/icons/favicon//site.webmanifest">
+
+        <title>Pre-Alpha 1 DevBlog</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark-blue">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../games.html">Games</a>
+                        <a class="nav-link" href="../websites.html">Websites</a>
+                        <a class="nav-link" href="../music.html">Music</a>
+                        <a class="nav-link" href="../pdf/resume.pdf" target="_blank">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="content-page">
+            <div class='white-text'>
+                <p class="title"><b>Pre-Alpha 1</b></p>
+                <p class='explain'>Oct 3 to Oct 17 - Design Work, Development, and Documentation</p>
+            </div>
+            
+            <div class='white-text' style="margin: 10px; font-size: 2vh; font-family: 'Roboto', sans-serif;">
+                <img src="../graphics/games/tower.png" class="center"><img>
+                <p>
+                    Hello, and welcome to <b>Project Tower.</b> Here, I will be posting regular updates on the development of Project Tower, and my involvement with it. So, without further ado - let's get into it.
+                </p>
+
+                <p><h2 class='header'>Project Tower Overview</h2></p>
+                <p>
+                    Project Tower is a top-down tower defense game, much in the same vein as Bloons TD6. It is based around Norse mythology, in which you play as a village trying to protect itself as the great battles of Ragnarök happen it. Your villagers defend against waves and waves of ghosts and the undead, and hopefully with some strategic intervention from the gods, your village can survive for another day.
+                </p>
+                <p>
+                    For this project, I'm working as the primary designer and a programmer on a team of about 14 people. 
+                </p>
+
+                <p><h2 class='header'>Documentation (11 Hours)</h2></p>
+                <p>Documentation took up the primary bulk of my work these past two weeks - as the primary designer, I was tasked with creating design documentation for all parts of the game:</p>
+                <ul>
+                    <li>Creating progression of enemies and their strengths</li>
+                    <li>Writing up a level progression chart, indicating which enemies showed up on which waves</li>
+                    <li>Drafting a mock of the user interface</li>
+                    <li>Designing towers, writing descriptions of how they operate, and creating their individual unique upgrade paths</li>
+                </ul>
+
+                <h4>User Interface</h4>
+                <p>One of my primary tasks for this sprint was the creation of a draft UI, in conjunction with Zelin Chen, one of our team's artists. I made a rather detailed paper draft, and plan on digitizing it and bringing this draft into the actual game in the following sprint. For this draft, I focused on trying to make the UI far less intrusive than in Bloon TD6, where menu elements take up significant portions of the screen. Instead, I will try to make a more simplistic and minimalistic look, relying heavily on icons to tell players where to click and what to do. I'll be evaluating this choice as we go into playtesting, and will be adjusting the design to suit the feedback we recieve.</p>
+                <p>Additionally, one significant break-point from Bloons is that we would like the menu to be able to slide in and out of the gameplay screen, rather than statically staying on the screen. Zelin has already made some art mockups that are in the game right now, so we are making excellent progress in the UI.</p>
+                <img src="photos/pa1-ui.jpg" class="center"><img>
+
+                <h4>Enemies</h4>
+                <p>Another primary task I had this week was the design of our enemy progression - how would the hierarchy of enemies look in our game and how would they be introduced into the game over time? I believe out of all the documentation tasks, this one took the most time, especially since I not only had to do research into how Bloons TD6 does this themselves, but also had to consult multiple members of our team, such as Amber and Nicholas, to get their input into how these should work for our Alpha build.</p>
+                <img src="photos/pa1-ghosts.PNG" class="center"><img>
+                <img src="photos/pa1-progression.jpg" class="center"><img>
+
+                <h4>Towers</h4>
+                <p>Furthermore, I was tasked with designing the descriptions and upgrade paths for two of our towers - the single-shot and the area of effect towers. However, due to having plenty of time (and needing to cover time for my class requirement), I actually completed descriptions and upgrade paths for all 6 of our basic towers, along with suggesting potential additional upgrades for each.</p>
+                <img src="photos/pa1-tower.PNG" class="center"><img>
+
+                <h4>Playtesting</h4>
+                <p>
+                    Additionally, for the sake of reference and in order to get better information from our playtesters once we start playtesting with a wider audience, I wrote a guide to playtesting called <b>So, You Want to Do A Playtesting</b>, which explains to reader why we playtest and how one should operate a playtest. I plan on trying to get the rest of the team to read and understand this, so that our feedback from playtesting can be as useful to us as possible.
+                </p>
+                <img src="photos/pa1-playtesting.PNG" class="center"><img>
+
+                <p><h2 class='header'>Programming and Development (5 Hours)</h2></p>
+                <p>Another significant chunk of my last two weeks was spent in development of some of the specific design features I mentioned above - however, due to some poor planning on my part and some unforseen circumstances throught the week, none of these changes were able to be put into the build before the end of the sprint.</p>
+                <p>However, work on these features still continues, and I will certainly be involved with their implementation in the game when it comes to the balancing of enemies and towers. Going into the next sprint, I will likely be acting upon some of my earlier UI designs, and finally bringing them over to Unity to form the first iteration of our official game UI.</p>
+
+                <p><h2 class='header'>Meetings (5 Hours)</h2></p>
+                <p>Another large chunk of my time was spent in meetings, both physical and digital. Some significant meetings include my involvement with the Narrative Team and their meetings, where we hashed out the basic narrative of the game going forward, our plans for the visual novel scenes, and also figured out how to represent our six base towers in the game.</p>
+                <p>For instance, one of my suggestions - the idea that camo sight should be derived from a tower and not an upgrade - is now the current working solution going forward, and will likely be an ability added to the support tower, Freya.</p>
+                <img src="photos/pa1-brainstorm.PNG" class="center"><img>
+
+
+                <p><h2 class='header'>Playtesting (2 Hours)</h2></p>
+                <p>Two of my 24 hours of work over the last two weeks been involved in watching playtesting of Project Tower from various advisors and industry experts. While I myself am not typically the active participant in these playtesting sessions, I make plenty of mental notes on what could be improved, both about our game and about how we do playtesting in general.</p>
+                <p>After alpha, I forsee I will probably end up conducting a significant amount of playtesting, especially as we start reaching out to other regular students. As the designer, I want to try and get the best and most rich playtesting feedback that I can get, either from me or any other playtester, thus the reason for the playtesting document earlier.</p>
+
+                <p><h2 class='header'>Game Research (1 Hour)</h2></p>
+                <p>Lastly, an hour or so of my time was spent actually playing Bloons, and getting used to the game.</p>
+
+            </div>
+            
+        </div>
+    </body>
+</html>
