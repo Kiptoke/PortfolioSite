@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en" class='bg-blue-gradient'>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Required Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+        <!-- CSS Files -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="../css/portfolio.css" rel="stylesheet" type="text/css">
+        <link href="../css/colors.css" rel="stylesheet" type="text/css">
+
+        <!-- JS Libraries + Files -->
+        <script src="https://unpkg.com/vue@3.2.4/dist/vue.global.prod.js"></script>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../graphics/icons/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../graphics/icons/favicon//favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../graphics/icons/favicon//favicon-16x16.png">
+        <link rel="manifest" href="../graphics/icons/favicon//site.webmanifest">
+
+        <title>Pre-Alpha 2 DevBlog</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark-blue">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../games.html">Games</a>
+                        <a class="nav-link" href="../websites.html">Websites</a>
+                        <a class="nav-link" href="../music.html">Music</a>
+                        <a class="nav-link" href="../pdf/resume.pdf" target="_blank">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="content-page">
+            <div class='white-text'>
+                <p class="title"><b>Pre-Alpha 2</b></p>
+                <p class='explain'>Oct 18 to Oct 31 - UI Work, UI Work, and More UI Work</p>
+            </div>
+            
+            <div class='white-text' style="margin: 10px; font-size: 2vh; font-family: 'Roboto', sans-serif;">
+                <p>
+                    For these two weeks, my primary tasks were concerned with the user interface of the game - updating the look of the game from that of a rapidly slapped together project to something more sleek and presentable. While I was not able to accomplish all of my work this week, I made significant progress in some aspects of it, and will continue to work on user interface improvements going forward.
+                </p>
+
+                <p><h2 class='header'>Programming and Development (14 Hours)</h2></p>
+                <p>Programming and development took up the bulk majority of my time these two weeks. The significant majority of that was spent implementing some of my previously made UI documentation into reality. The two areas I decided to focus in on for this sprint was the main menu and the credits, as the main game screen and the visual novel screen were being handled by other developers at the time.</p> 
+                <h4>Credits</h4>
+                <p>The implementation of the credits screen wasn't too difficult, but it did come with some hiccups. For instance, without realizing that there had been a general library script already made from past projects, I ended up writing an entirely novel credits scroll solution that ended up having to be scrapped. Below is the full <code>ScriptScrollController.cs</code> that I ended up having to scrap for a modified <code>credits.cs</code>. There are a couple of novice errors (I forgot that I could just add an 'f' behind doubles to make them floats), but overall, this did manage to work.</p>
+                
+                <pre><code class="code-block black-text">public class ScriptScrollController : MonoBehaviour
+{
+
+    private float currentYValue;
+    public float endYValue;
+    public float speed = ((float)0.5);
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        currentYValue = this.GetComponent<RectTransform>().localPosition.y;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(currentYValue < endYValue)
+        {
+            currentYValue = currentYValue + speed;
+            this.GetComponent<RectTransform>().localPosition = new Vector3(0,currentYValue,0);
+        }
+    }
+}</code></pre>
+
+                <p>I can safely say that with the new script, the credits page is far more future-proof, and easier to modify. Below is a gif of it working.</p>
+
+                <img src="photos/pa2-credits.gif" class="center"><img>
+
+                <h4>Main Menu</h4>
+                <p>The main menu ended up being a significant pain to implement this sprint, largely because of some structural features of the existing menu UI that I had to work around.</p>
+                <p>The most notable of these issues was the fact that the buttons were organized by a Horizontal Layout Group, and thus their x values were determined shortly after the start of the scene. The issue is - I was implementing a small line indicator that showed which option the user was hovering over at the time. In order to not constantly be asking for the x values of each button, I decided to query those values at the start of the scene and store them in a list.</p>
+                <p>This is where the problem kicks in - see, since the Horizontal Layout Group doesn't place the buttons at their visible locations until shortly after the start of the scene, whenever I got the coordinates of the buttons for the indicator at the start of the scene, they would always return (0,0,0). <i>Not helpful</i>.</p>
+                <p>My solution to this is quite hamfisted, and probably not the best thing to have done - I ended up putting the code for finding the x values of the buttons in a coroutine that was set to wait 0.01 seconds after the start of the scene, and <i>then</i> it would get the x values of the buttons. For clarity, this code is listed below.</p>
+                <pre><code class="code-block black-text">/*
+ * Yes, I know this code is hamfisted and bad.
+ * If you want to figure out a way to get the x values of the
+ * buttons before being moved by the Horizontal Layout Group,
+ * be my guest.
+ * - Andrew
+ */
+IEnumerator LayoutWait()
+{
+    yield return new WaitForSeconds((float) 0.01);
+    foreach (RectTransform btn in buttons){
+        float btnX = btn.position.x;
+        btnLocations.Add(btnX);
+    }
+    // btnLocations[x] should always be set to the "START" button
+    indicator.SetPositionAndRotation(new Vector3(btnLocations[2], indicator.position.y, 0), Quaternion.identity);
+    start = indicator.position;
+}</code></pre>
+                <p>For now, the code works. And hopefully nobody complains about it (I see you, Professor Yarger). Below, I've included some images and gifs showing my progress in creating the main menu, as a means of showing the iterative process of building this screen from concept to reality.</p>
+                <img src="photos/pa2-menuproposal.jpg" class="center"><img>
+                <img src="photos/pa2-menuiteration.gif" class="center"><img>
+                <img src="photos/pa2-menufull.gif" class="center"><img>
+
+                <p><h2 class='header'>Documentation (5 Hours)</h2></p>
+                <p>In preparation for non-industry, non-studio playtesting to begin after the sprint, I spent some time building a sample playtesting script that members could use when running playtests. This was largely motivated by the fact that I've been in four classes that have taught me how to do this and you can bet I'm going to try and apply that, but also because I'm sometimes unsatisfied with the way we conduct industry playtests. While I understand that these people know who we are and are somewhat familiar with the projects we're working on, I think that some actions taken during these playtests (discussing elements of the game while the player is playing, explaining concepts, answering questions during gameplay, in short, <i>treating the session as a demo and not an actual playtest</i>) could lead to bad practices when conducting playtests with non-industry members.</p>
+                <img src="photos/pa2-playtestingscript.png" class="center"><img>
+
+                <p><h2 class='header'>Meetings (4 Hours)</h2></p>
+                <p>I spent four hours of my time in various studio meetings, the majority of which were the main weekly meetings on Sundays. Not much to say here.</p>
+
+                <p><h2 class='header'>Game Research (1 Hour)</h2></p>
+                <p>I've been pretty busy, and while I wasn't really able to play much Bloons, I did spend time watching other people play Bloons. I tried to note what other people focused on, as well as the UI of the game itself.</p>
+            </div>
+            
+        </div>
+    </body>
+</html>

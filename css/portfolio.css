@@ -209,6 +209,13 @@ footer{
   font-weight: bold;
 }
 
+.code-block{
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}
+
 /* ----------- MEDIA QUERIES ---------- */
 
 @media only screen and (max-width: 1100px) {
