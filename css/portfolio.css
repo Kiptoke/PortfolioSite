@@ -36,6 +36,13 @@ footer{
   font-size: 20px;
 }
 
+code{
+  background-color: #d7fcf9d0;
+  border-radius: 3px;
+  font-family: 'Roboto Mono', monospace;
+  padding: 0 3px;
+}
+
 /* ---------- Front Page CSS ---------- */
 
 #intro{

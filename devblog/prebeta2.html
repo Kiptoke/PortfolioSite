@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en" class='bg-blue-gradient'>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Required Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+        <!-- CSS Files -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="../css/portfolio.css" rel="stylesheet" type="text/css">
+        <link href="../css/colors.css" rel="stylesheet" type="text/css">
+
+        <!-- JS Libraries + Files -->
+        <script src="https://unpkg.com/vue@3.2.4/dist/vue.global.prod.js"></script>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../graphics/icons/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../graphics/icons/favicon//favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../graphics/icons/favicon//favicon-16x16.png">
+        <link rel="manifest" href="../graphics/icons/favicon//site.webmanifest">
+
+        <title>Pre-Beta 2 DevBlog</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark-blue">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../games.html">Games</a>
+                        <a class="nav-link" href="../websites.html">Websites</a>
+                        <a class="nav-link" href="../music.html">Music</a>
+                        <a class="nav-link" href="../pdf/resume.pdf" target="_blank">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="content-page">
+            <div class='white-text'>
+                <p class="title"><b>Pre-Beta 2</b></p>
+                <p class='explain'>Nov 15 to Nov 28 - Big Beta UI Bash</p>
+            </div>
+            
+            <div class='white-text' style="margin: 10px; font-size: 2vh; font-family: 'Roboto', sans-serif;">
+                <p>
+                    Ok, fair warning - I did <i>not</i> complete 24 hours of work this sprint. In fact, I didn't even break 12. This is halfway due to the break occurring, but also partially due to some personal issues I've had to deal with throughout the last two weeks. Things are better now, and I look forward to pushing hard for the last couple of weeks of the game's development.
+                </p>
+
+                <p><h2 class='header'>Programming and Development (6 Hours)</h2></p>
+                <p>Once again, the bulk of my work for this sprint was programming and development - and once again, it was largely UI work. Let me break it down:</p>
+                <h4>Planning</h4> 
+                <p>I understood that there was now a significant backlog of work that I needed to accomplish with the user interface, and that cramming all of that into one branch would not be easy or helpful. So, in order to keep related work together, I decided to do some planning. Below is a picture of "<i>The Big Beta UI Bash</i>", a document I wrote up in order to figure out what needed to be fixed and separate that into three categories. From there, we'd be able to see progress on all three major UI categories, as well as keep everything public and visible for all members to contribute to and discuss.</p>
+                <img src="photos/pb2-plan.png" class="center"></img>
+                
+                <h4>Execution</h4>
+                <p>For the first part of actual development work, I decided to focus on what I felt was "gameplay critical" features - restoring functionality to the pause menu and credits. For context, the pause menu simply wouldn't work in-game and the credits soft-locked the game by not actually displaying. For the credits, this was a relatively simple fix - somehow, in the code that we use to manage the main screen, another developer had switched the boolean value of the pause menu from <code>True</code> to <code>False</code> in the <code>GoToCreditsScreen()</code> function in our MainMenuManager. How exactly this happened, I'll never know - possibly an error reintroduced by a merge conflict. Maybe one of these days we'll figure out an effective code review or QA automation scheme for the studio, but that's well beyond the scope of my job <i>and</i> of my time remaining at this university. Moving on.</p>
+                <p>The pause menu was also relatively easy to restore, albeit with it's own unique quirk - Let's talk about the General Library. The <b>General Library</b> is an attempt by WolverineSoft Studio members to create generalized and universal components for the studio to use. A noble pursuit, right - make coding of similar features easier across projects by giving us easy, drag-and-drop components that just <i>work</i> out of the box. As a result of this work, not only do general library scripts make up a large part of our current codebase, but developers are encouraged to use them over novel, game-specific implementations. Well, our pause menu code just happens to be taken from the General Library. Unfortunately for me, the "General" Library code isn't as general as we'd like it to be.</p>
+                <p>In the General Library, we find our code for pausing the game within the <code>GameManager.cs</code>. Now, this GameManager is intended to be a universal component that persists across the length of the game - as a result, GameManager is implemented as a singleton. Note the use of "instance" inside the <code>PauseGame()</code> function. As a result, this means that in order for our pause menu to actually work, this GameManager needs to be present. Otherwise, the code to activate the pause button simply doesn't exist within a scene. Now, this wouldn't be an issue if we made the game within one scene, but we didn't - the game is separated into multiple Unity scenes. That means instead, during the running of the game, we have to instantiate the GameManager at some point in active gameplay for it to persist across scenes - in Project Tower, we chose to do that in the main menu. This makes sense, but the ramifications of this choice means that if I, a developer, wanted to test the pause menu within the scene for say, Level One, than it would <b>never work</b>. This is because the GameManager was never instantiated and thus the code to pause the game doesn't exist. Instead, I have to do a somewhat hamfisted workaround in order to test pause functionality AT ALL:</p>
+                <ol>
+                    <li>Make edits to the Level One scene or pause menu</li>
+                    <li>Save those changes</li>
+                    <li>Load up the Main Menu scene</li>
+                    <li>Start the game in Unity from the Main Menu scene</li>
+                    <li>Press all the options to start a game in the Main Menu</li>
+                    <li>Click through all the things we have between starting the game and actually playing it</li>
+                    <li>Upon entering the Level One scene, <i>finally</i> click the pause menu and see if it works</li>
+                    <li>If it didn't, or if something is broken, load up the Level One scene and start all over</li>
+                </ol>
+                <p>If it isn't clear by now, I found this to be a rather annoying waste of time.</p>
+                <img src="photos/pb2-pausecode.png" class="center"></img>
+                <p>This could go into a larger conversation about how the way we've implemented the General Library ends up forcing us to make poor or strange code/design decisions that hamper our efficiency later in development; in a way contradicting the "drag-and-drop and it just works" intention of the General Library by forcing design patterns when they might not be neccessary. However, this is once again out of the scope of my tasks and also well beyond my time remaining here in the club. Alternatively, I could also talk about the fact that we are encouraged to use Text over the far more superior TextMeshPro <i>because</i> Text is what is referenced in General Library scripts, but I digress.</p>
+                <p>Oh, and I also added in new art to the pause menu.</p>
+                <img src="photos/pb2-pause.gif" class="center"></img>
+
+                <p>Lastly, something good that is actually coming from me - new UI changes! Things to note:</p>
+                <ul>
+                    <li>Important UI elements have been moved to the corners, and grouped to put important information next to each other</li>
+                    <li>The corner graphics are in! However, they're placeholders that I made in 5 minutes from Paint 3D, so hopefully those get changed soon</li>
+                    <li>I have no idea where Auto Start is going to go. Frankly, I didn't even know it was a feature that was getting added at all. I might push for its removal.</li>
+                    <li>Speaking of removals, look at all the space that got removed from the tower screen! The side bar now takes up far less screen real estate and has less unused negative space.</li>
+                    <li>Also speaking of removals, the pause button itself might be getting the axe soon - I plan to replace the button with just a press of ESC.</li>
+                </ul>
+                <img src="photos/pb2-ui.png" class="center"></img>
+                <p>So, some actual positive work towards UI changes from me! That is, if you ignore the fact that as of writing, these changes are unfortunately blocked by a merge conflict. Well, you win some and you lose some.</p>
+                
+                <p><h2 class='header'>Meetings (3 Hours)</h2></p>
+                <p>Same as always - time spent in studio meetings, although this week, I also spent time talking with Crystal of the narrative team in order to figure out narrative needs for the UI.</p>
+
+                <p><h2 class='header'>Playtesting (2 Hours)</h2></p>
+                <p>This sprint, I actually participated in some playtesting of my own! Although, to be fair, this was actually playtesting for Project Bloom for their level design, so I'm not sure if it counts.</p>
+            </div>
+            
+        </div>
+    </body>
+</html>
