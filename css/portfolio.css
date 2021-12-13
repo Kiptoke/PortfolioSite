@@ -37,7 +37,8 @@ footer{
 }
 
 code{
-  background-color: #d7fcf9d0;
+  color: #d7fcf9;
+  background-color: #3a3a3a;
   border-radius: 3px;
   font-family: 'Roboto Mono', monospace;
   padding: 0 3px;
@@ -209,6 +210,13 @@ code{
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.small-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }
 
 .header{

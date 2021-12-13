@@ -67,6 +67,10 @@ devblog.component('devblog', {
         <b>DevBlogs:</b> 
         <ul>
             <li><a href='devblog/prealpha1.html' style='text-decoration:none;'>Pre-Alpha 1</a></li>
+            <li><a href='devblog/prealpha2.html' style='text-decoration:none;'>Pre-Alpha 2</a></li>
+            <li><a href='devblog/prebeta1.html' style='text-decoration:none;'>Pre-Beta 1</a></li>
+            <li><a href='devblog/prebeta2.html' style='text-decoration:none;'>Pre-Beta 2</a></li>
+            <li><a href='devblog/gold.html' style='text-decoration:none;'>Gold</a></li>
         </ul>
     </p>
     `
