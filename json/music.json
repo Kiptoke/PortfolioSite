@@ -2,6 +2,21 @@
     "music": 
     [
         {
+            "name": "Misty",
+            "id": "misty",
+            "date": "February 2021",
+            "img": "misty.jpg",
+            "tags": 
+            [
+                "Chiptune",
+                "Other Cover"
+            ],
+            "desc": "Created for Valentines Day, it's a chiptune cover of Erroll Garner's 'Misty', based off the arrangement done by Simon Fransman.",
+            "youtube": "https://youtu.be/FTFz9radzgM",
+            "url": "https://youtu.be/FTFz9radzgM"
+            
+        },
+        {
             "name": "Persona 4 - Nevermore",
             "id": "p4-nevermore",
             "date": "May 2021",
