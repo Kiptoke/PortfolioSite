@@ -2,6 +2,51 @@
     "music": 
     [
         {
+            "name": "Friendlies 2",
+            "id": "friendlies2",
+            "date": "January 2023",
+            "img": "friendlies2.png",
+            "tags": 
+            [
+                "Chiptune",
+                "Original"
+            ],
+            "desc": "Another EP of short 1-minute songs for my friends, this time all friends from my last years at university, and this time all made in a new software - Furnace Tracker. I had a lot of fun trying to emulate the various genres of music my friends listened to, and it was a great exercise in composition and musical understanding.",
+            "youtube": null,
+            "url": "https://kiptoke.bandcamp.com/album/friendlies-20"
+            
+        },
+        {
+            "name": "Plantasia",
+            "id": "plantasia",
+            "date": "July 2022",
+            "img": "plantasia.png",
+            "tags": 
+            [
+                "Chiptune",
+                "Other Cover"
+            ],
+            "desc": "Fellow chiptune artist Teuthida once asked why there weren't any Famitracker covers of Mort Garson's Plantasia. I took that as a challenge. Made in Famitracker 2A03 + VRC6.",
+            "youtube": "https://youtu.be/gQ2x6fT2SR8",
+            "url": "https://youtu.be/gQ2x6fT2SR8"
+            
+        },
+        {
+            "name": "You Were Wrong. Go Back.",
+            "id": "wrong",
+            "date": "April 2022",
+            "img": "you-were-wrong.png",
+            "tags": 
+            [
+                "Chiptune",
+                "VGM Cover"
+            ],
+            "desc": "I'm a huge fan of OMORI by Omocat, and decided to cover one of my favorite songs, \"You Were Wrong. Go Back.\", composed by Jami Lynne. Made in Famitracker 2A03 + VRC6.",
+            "youtube": "https://youtu.be/KGvUblAnVYk",
+            "url": "https://youtu.be/KGvUblAnVYk"
+            
+        },
+        {
             "name": "Misty",
             "id": "misty",
             "date": "February 2021",

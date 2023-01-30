@@ -92,6 +92,9 @@
                                 </ul> 
                             </div>
                             <p>{{game.desc}}</p>
+                            {% if game.id == "tower" %}
+                                <devblog></devblog>
+                            {% endif %}
                         </div>
                         <div class="modal-footer">
                             {% if game.git %}

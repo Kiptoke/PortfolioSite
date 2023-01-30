@@ -2,6 +2,25 @@
     "games": 
     [
         {
+            "name": "Doki Doki Game Development Club",
+            "id": "ddgdc",
+            "date": "July 2021",
+            "role": "Designer and Programmer",
+            "img": "ddgdc.png",
+            "tags": 
+            [
+                "Game Jam",
+                "Finished"
+            ] ,
+            "desc": "Doki Doki Game Development Club is a visual novel in which you search for the perfect game jam partner, encountering interesting characters, wacky situations, and potentially... love (but not really). I worked with a very talented artist and writer to help create this game, and together we managed to win the WolverineSoft 2022 Beach Game Jam.",
+            "tech": 
+            [
+                "RenPy"
+            ],
+            "git": "https://github.com/Kiptoke/disaster-dating",
+            "url": "https://kapitha.itch.io/doki-doki-game-development-club"
+        },
+        {
             "name": "Ragnarök TD",
             "id": "tower",
             "date": "December 2021",
