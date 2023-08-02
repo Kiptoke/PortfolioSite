@@ -2,6 +2,45 @@
     "games": 
     [
         {
+            "name": "Gunlympics",
+            "id": "gunlympics",
+            "date": "July 2023",
+            "role": "Solo Developer",
+            "img": "gunlympics.png",
+            "tags": 
+            [
+                "Game Jam",
+                "Finished"
+            ] ,
+            "desc": "Gunlympics is an... expansion? Reimagining? Redo? of Patently Awful Soccer Simulator, in which players will go through multiple Olympic sports, except they can only move using a wildly-inaccurate gun. Made in one week for the WolverineSoft 2023 Beach Game Jam.",
+            "tech": 
+            [
+                "Godot",
+                "Furnace Tracker"
+            ],
+            "git": "https://github.com/Kiptoke/Gunlympics",
+            "url": "https://kiptoke.itch.io/gunlympics"
+        },
+        {
+            "name": "Outer Origins",
+            "id": "outer",
+            "date": "February 2023",
+            "role": "Solo Developer",
+            "img": "outer-origins.png",
+            "tags": 
+            [
+                "Game Jam",
+                "Finished"
+            ] ,
+            "desc": "In the far future, humans have begun to colonize new planets beyond Earth. But before they can terraform the planet, they need to gather the resources necessary to survive. Through the use of the Remote Operated Outer Terraforming System, they can send robots deep into the ground to get the resources for them. Be warned though, they never figured out how to get the R.O.O.T.S out of the ground… Made for the 2023 Global Game Jam.",
+            "tech": 
+            [
+                "Godot"
+            ],
+            "git": "https://github.com/Kiptoke/Outer-Origins",
+            "url": "https://kiptoke.itch.io/outer-origins"
+        },
+        {
             "name": "Doki Doki Game Development Club",
             "id": "ddgdc",
             "date": "July 2021",

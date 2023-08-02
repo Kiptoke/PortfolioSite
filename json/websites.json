@@ -2,6 +2,21 @@
     "websites": 
     [
         {
+            "name": "Poger Archives",
+            "id": "poger",
+            "date": "May 2023",
+            "img": "poger.png",
+            "desc": "Poger is an activity started by my friend group in March of 2022, when a bunch of us recommended songs that we liked and put it into a shared Spotify playlist. This site is an archive of all Pogers from the original melody is poger in March 2022 to the current day.",
+            "tech": 
+            [
+                "Nuxt 3",
+                "Inkline",
+                "Python 3"
+            ],
+            "git": "https://github.com/Kiptoke/Poger-List",
+            "url": "https://poger-archive.netlify.app/"
+        },
+        {
             "name": "The Open Source Game Development (OSGD) Collection",
             "id": "osgd",
             "date": "February 2022",
