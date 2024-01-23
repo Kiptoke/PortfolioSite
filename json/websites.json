@@ -21,12 +21,12 @@
             "id": "osgd",
             "date": "February 2022",
             "img": "osgd.png",
-            "desc": "The Open Source Game Development (OSGD) Collection is a curated list of freely available open-source game development resources that anyone can access. The purpose of the list is to serve as a central repository of open-source game development projects for anyone to discover, use, or contribute to. I created it as a personal project of mine, and still maintain it as its curator and sole developer. I learned many new things in the development of this site, such as interfacing with the GitHub API to get repository data, as well as using GitHub actions to set up automatic web builds every 6 hours.",
+            "desc": "The Open Source Game Development (OSGD) Collection is a curated list of freely available open-source game development resources that anyone can access. The purpose of the list is to serve as a central repository of open-source game development projects for anyone to discover, use, or contribute to. I created it as a personal project of mine, and still maintain it as its curator and sole developer. It runs on Nuxt 3, Inkline, Supabase, and the GitHub API.",
             "tech": 
             [
-                "HTML/CSS",
-                "Bootstrap",
-                "Python 3"
+                "Nuxt 3",
+                "Inkline",
+                "Supabase"
             ],
             "git": "https://github.com/Kiptoke/OSGD-Collection",
             "url": "https://opensourcegamedev.com/"

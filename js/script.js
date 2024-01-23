@@ -1,14 +1,13 @@
 const iama = Vue.createApp({
     data() {
         return {
-            entry: 'programmer.',
+            entry: 'software engineer.',
             index: 1,
             entryList:[
-                'programmer', 
+                'software engineer', 
                 'web developer', 
                 'tall nerd', 
-                'CS student',
-                'UMich instructional aide',
+                'University of Michigan grad',
                 'game designer',
                 'musician',
                 'cybersecurity fan',
@@ -43,9 +42,6 @@ social.component('social-media', {
         </a>
         <a href='https://www.facebook.com/kiptoke' style='text-decoration:none;' target='_blank'>
             <img src='graphics/icons/facebook.svg' alt='Facebook' class='icon'>
-        </a>
-        <a href='https://twitter.com/KiptokeDev' style='text-decoration:none;' target='_blank'>
-            <img src='graphics/icons/twitter.svg' alt='Twitter' class='icon'>
         </a>
         <a href='https://github.com/Kiptoke' style='text-decoration:none;' target='_blank'>
             <img src='graphics/icons/github.svg' alt='Github' class='icon'>
