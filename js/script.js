@@ -4,16 +4,17 @@ const iama = Vue.createApp({
             entry: 'software engineer.',
             index: 1,
             entryList:[
-                'software engineer', 
+                'software engineer',
+                'chiptune composer', 
+                'game designer',
                 'web developer', 
                 'tall nerd', 
+                'transit enthusiast',
                 'University of Michigan grad',
-                'game designer',
                 'musician',
                 'cybersecurity fan',
-                'D&D enthusiast',
-                'former campaign manager',
-                'chiptune composer'
+                'tabletop RPG lover',
+                'former campaign manager'
             ]
         }
     },
